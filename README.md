@@ -1,2 +1,3 @@
 # OpenBeeTracker
-Siamo i più fuchi
+
+Repository principale del progetto _"OpenBeeTracker"_.
