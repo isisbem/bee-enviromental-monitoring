@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
-import { createRouter, createWebHistory } from 'vue-router'
+import VueClickAway from "vue3-click-away";
 import { setupLayouts } from "virtual:generated-layouts";
+import { createRouter, createWebHistory } from 'vue-router'
 
 import "virtual:windi.css";
 
@@ -15,5 +16,6 @@ const router = createRouter({
 
 const app = createApp(App)
 app.use(router)
+app.use(VueClickAway)
 
 app.mount('#app')
