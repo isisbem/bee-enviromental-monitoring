@@ -5,13 +5,16 @@ export default {
       mobileMenu: false,
       links: [
         {
-          name: 'Grafici'
+          name: 'Grafici',
+          url: '/'
         },
         {
-          name: 'Chi siamo'
+          name: 'Chi siamo',
+          url: '/'
         },
         {
-          name: 'FAQ'
+          name: 'FAQ',
+          url: '/faq'
         }
       ]
     }
@@ -52,9 +55,9 @@ export default {
               </div>
             </div>
             <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-              <a v-for="link in links" :key="link.name" href="#" class="font-medium text-gray-500 hover:text-gray-900">
+              <router-link v-for="link in links" :key="link.name" :to="link.url" class="font-medium text-gray-500 hover:text-gray-900">
                 {{ link.name }}
-              </a>
+              </router-link>
 
               <!-- <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Chi siamo</a>
 
