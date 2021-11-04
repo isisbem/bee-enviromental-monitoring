@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar.vue';
 </script>
 
 <template>
-  <main class="relative bg-white overflow-hidden h-screen">
+  <main class="relative bg-white h-screen">
     <Navbar />
 
     <router-view />

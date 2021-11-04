@@ -18,7 +18,7 @@
 </script>
 
 <template>
-  <!--<main class="mt-5 mx-auto max-w-7xl px-4 sm:mt-6 sm:px-6 md:mt-8 lg:mt-10 lg:px-8 xl:mt-19">
+  <main class="mt-5 mx-auto max-w-7xl px-4 sm:mt-6 sm:px-6 md:mt-8 lg:mt-10 lg:px-8 xl:mt-19">
     <div class="sm:flex flex-col justify-center items-center text-center">
       <h1 class="text-3xl tracking-tight font-extrabold flex justify-center items-center sm:text-4xl md:text-5xl">
         <span class="block text-yellow-500">Frequently</span>
@@ -41,10 +41,18 @@
         <div class="py-3 bg-white overflow: hidden;">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quo saepe fugiat corrupti molestias dolores optio delectus voluptatibus ad doloremque sequi odit, expedita, excepturi veritatis neque magnam, eveniet exercitationem deserunt?</p>
         </div>
+        
+        <button class="accordion w-full bg-yellow-600 rounded py-1">Domanda 4</button>
+        <div class="py-3 bg-white overflow: hidden;">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quo saepe fugiat corrupti molestias dolores optio delectus voluptatibus ad doloremque sequi odit, expedita, excepturi veritatis neque magnam, eveniet exercitationem deserunt?</p>
+        </div>
+        
+        <button class="accordion w-full bg-yellow-600 rounded py-1">Domanda 4</button>
+        <div class="py-3 bg-white overflow: hidden;">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quo saepe fugiat corrupti molestias dolores optio delectus voluptatibus ad doloremque sequi odit, expedita, excepturi veritatis neque magnam, eveniet exercitationem deserunt?</p>
+        </div>
+
       </div>
     </div>
-  </main>-->
-  <div>
-    
-  </div>
+  </main>
 </template>
