@@ -2,9 +2,9 @@
   <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
     <div class="sm:flex flex-col justify-center items-center text-center">
       <h1 class="text-4xl tracking-tight font-extrabold flex justify-center items-center sm:text-5xl md:text-6xl">
-        <span class="block text-yellow-500">Open</span>
-        <span class="block text-black">Bee</span>
-        <span class="block text-yellow-500">Tracker</span>
+        <span class="text-yellow-500">Open</span>
+        <span class="text-black">Bee</span>
+        <span class="text-yellow-500">Tracker</span>
       </h1>
       <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
         Il progetto OpenBeeTracker permette di monitorare i movimenti dell api, come entrata o uscita dall'alveare, tramite dei sensori di dimensione molto piccola posizionati su di esse
