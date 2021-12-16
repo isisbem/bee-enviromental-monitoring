@@ -9,8 +9,10 @@
   "dependencies": {
     "@headlessui/vue": "^1.4.2",
     "@heroicons/vue": "^1.0.5",
+    "apexcharts": "^3.32.0",
     "vue": "^3.2.16",
     "vue-router": "^4.0.12",
+    "vue3-apexcharts": "^1.4.1",
     "vue3-click-away": "^1.2.1"
   },
   "devDependencies": {

@@ -3,9 +3,12 @@ import Navbar from '../components/Navbar.vue';
 </script>
 
 <template>
-  <main class="relative bg-white h-screen">
+  <main class="relative transition-colors duration-100 bg-white dark:bg-true-gray-900 h-screen">
     <Navbar />
-
+    <!-- <div class="container grid-cols-2">
+      
+    </div> -->
     <router-view />
   </main>
 </template>
+

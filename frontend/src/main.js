@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import VueClickAway from "vue3-click-away";
 import { setupLayouts } from "virtual:generated-layouts";
 import { createRouter, createWebHistory } from 'vue-router'
+import VueApexCharts from "vue3-apexcharts" 
 
 import "virtual:windi.css";
 
@@ -17,5 +18,7 @@ const router = createRouter({
 const app = createApp(App)
 app.use(router)
 app.use(VueClickAway)
+app.use(VueApexCharts)
 
 app.mount('#app')
+
