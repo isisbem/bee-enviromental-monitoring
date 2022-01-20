@@ -1,6 +1,6 @@
 <template>
   <div>
-    <apexchart width="900" type="rangeBar" :options="options" :series="series"></apexchart>
+    <apexchart width="900" type="area" :options="options" :series="series"></apexchart>
   </div>
 </template>
 
@@ -50,6 +50,20 @@ const series = [{
   }, {
     x: 'Ape D',
     y: [5, 9]
+  }]
+}, {
+  data: [{
+    x: 'Ape A',
+    y: [3, 1]
+  }, {
+    x: 'Ape B',
+    y: [7, 1]
+  }, {
+    x: 'Ape C',
+    y: [3, 1]
+  }, {
+    x: 'Ape D',
+    y: [9, 5]
   }]
 }]
 

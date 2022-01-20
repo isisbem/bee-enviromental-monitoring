@@ -52,7 +52,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="max-w-7xl mx-auto">
+  <div id="app" class="max-w-7xl mx-auto">
     <div class="relative transition-colors duration-100 z-10 bg-white dark:bg-true-gray-900">
       <div>
         <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
@@ -161,3 +161,5 @@ onMounted(() => {
     <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="">
   </div> -->
 </template>
+
+
