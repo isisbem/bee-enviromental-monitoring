@@ -1,6 +1,6 @@
 <template>
   <main >
-    <div class="mt-5 sm:flex flex-col justify-center items-center text-center h-screen flex-grow mx-40 font-serif">  
+    <div class="mt-5 sm:flex flex-col justify-center items-center text-center flex-grow mx-40 font-serif">  
       <img src="../assets/images/coso.jpeg" class="h-max w-max" >
       <div class="mt-10 mb-20 p-5 md:container border-1 border-black rounded-lg dark:border-white">
         <p class="indent-18 text-center font-bold dark:text-white">
