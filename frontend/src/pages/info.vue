@@ -35,7 +35,7 @@
             Applicazione creata da
           </dt>
           <dd class="mt-1 font-semibold text-md text-gray-900 dark:text-gray-300 sm:mt-0 sm:col-span-2">
-            Antonio Iorio, Cristian Radev, Luca Gamberini e 4 IA anno 21/22
+            Antonio Iorio, Miloš Kovaćevič, Cristian Radev, Luca Gamberini e 4 IA anno 21/22
           </dd>
         </div>
         <div class="px-4 py-5 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 border-b border-gray-300 dark:bg-true-gray-900">
