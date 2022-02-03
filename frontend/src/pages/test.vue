@@ -72,25 +72,6 @@ export default {
                     <ChevronDownIcon class="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
                   </MenuButton>
                   </div>
-
-                  <transition enter-active-class="transition ease-out duration-100" enter-from-class="transform opacity-0 scale-95" enter-to-class="transform opacity-100 scale-100" leave-active-class="transition ease-in duration-75" leave-from-class="transform opacity-100 scale-100" leave-to-class="transform opacity-0 scale-95">
-                    <MenuItems class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none">
-                      <div class="py-1">
-                        <MenuItem v-slot="{ active }">
-                          <a href="#" :class="[active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm']">INsta</a>
-                        </MenuItem>
-                        <MenuItem v-slot="{ active }">
-                          <a href="#" :class="[active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm']">youtube</a>
-                        </MenuItem>
-                        <MenuItem v-slot="{ active }">
-                          <a href="#" :class="[active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm']">twitter</a>
-                        </MenuItem>
-                        <MenuItem v-slot="{ active }">
-                          <a href="#" :class="[active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm']">email</a>
-                        </MenuItem>
-                      </div>
-                    </MenuItems>
-                  </transition>
                 </Menu>
               </div>
             </div>
@@ -98,5 +79,13 @@ export default {
         </main>
       </div>
     </div>
+    <footer class="flex justify-center items-center space-x-3">
+    <a href="https://www.instagram.com/openbeetracker/" target="_blank">
+      <img src="../assets\images/Logo Insta Custom 1.svg" class="h-10 w-10">
+    </a>    
+    <a href="https://www.youtube.com/channel/UCApS3abjBtJ1s1E4VZDBLag" target="_blank">
+      <img src="../assets\images/Logo YT Custom 2.svg" class="h-10 w-10">
+    </a>
+  </footer>
   </div>
 </template>
