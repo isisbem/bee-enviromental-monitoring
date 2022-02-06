@@ -6,7 +6,12 @@
         <p class="indent-18 text-center text-gray-700  dark:text-white">
           Vi state chiedendo chi siamo, <b>bene</b>! Noi siamo una classe quarta dell'istituto tecnico 
           Guglielmo Marconi, di Staranzano. Ci è stato affidato il compito di gestire  
-        </p>
+          </p>
+      </div>
+      <div class = "flex flex-row space-x-6">
+        <div><img class="rounded-lg" src="../assets/images/immagine about prova.jpeg" ></div>
+        <div><img class="rounded-lg" src="../assets/images/immagine about prova.jpeg" ></div>
+        <div><img class="rounded-lg" src="../assets/images/immagine about prova.jpeg" ></div>
       </div>
     </div>
   </main>
