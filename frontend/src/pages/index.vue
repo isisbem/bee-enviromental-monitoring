@@ -11,7 +11,7 @@
       </p>
       <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
         <div class="rounded-md shadow">
-          <a href="./info" class="w-full transition duration-100 flex items-center justify-center px-8 py-3 border border-transparent rounded-md text-gray-100 bg-black hover:bg-yellow-500 md:py-4 md:text-lg md:px-10 dark:bg-yellow-500 dark:text-black dark:hover:bg-black dark:hover:text-white">
+          <a href="./info" class="cursor-help w-full transition duration-100 flex items-center justify-center px-8 py-3 border border-transparent rounded-md text-gray-100 bg-black hover:bg-yellow-500 md:py-4 md:text-lg md:px-10 dark:bg-yellow-500 dark:text-black dark:hover:bg-black dark:hover:text-white">
             Informazioni dettagliate
           </a>
         </div>

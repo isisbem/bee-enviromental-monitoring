@@ -9,7 +9,7 @@
           </p>
       </div>
       <div class = "flex flex-row space-x-6">
-        <div><img class="rounded-lg" src="../assets/images/immagine about prova.jpeg" ></div>
+        <div><img class="rounded-lg hover:rotate-90" src="../assets/images/immagine about prova.jpeg" ></div>
         <div><img class="rounded-lg" src="../assets/images/immagine about prova.jpeg" ></div>
         <div><img class="rounded-lg" src="../assets/images/immagine about prova.jpeg" ></div>
       </div>
