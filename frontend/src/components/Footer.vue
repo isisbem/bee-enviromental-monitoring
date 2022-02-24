@@ -38,21 +38,11 @@ export default {
 </script>
 
 <template>
-    <footer class="mt-30 w-full p-2 transition-colors duration-100 bg-true-gray-50 dark:bg-true-gray-900" >
-        <div class="mt-6 mb-10 md:ml-150">
-            <div class="flex flex-row space-x-10">    
-                <a href="https://www.instagram.com/openbeetracker/" target="_blank">
-                    <img src="../assets\images/iconmonstr-instagram-11.svg" class="h-12 w-12">
-                </a>    
-                <a href="https://www.youtube.com/channel/UCApS3abjBtJ1s1E4VZDBLag" target="_blank">
-                    <img src="../assets\images/iconmonstr-youtube-6.svg" class="h-12 w-12">
-                </a>
-            </div>
-        </div>
-        <div classx="py-12 bg-white">
+    <footer class="mt-30 w-full p-2 transition-colors duration-100 bg-white dark:bg-true-gray-900" >
+        <div class="py-12">
             <div class="mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="lg:text-center">
-                    <h2 class="text-base text-yellow-500 font-semibold tracking-wide uppercase">Ringraziamenti</h2>
+                    <h1 class="text-base text-yellow-500 font-semibold tracking-wide uppercase text-3xl ">Ringraziamenti</h1>
                     <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
                         Ringraziamo soprattutto i seguenti partecipanti al progetto
                     </p>
@@ -75,6 +65,16 @@ export default {
                         </div>
                     </dl>
                 </div>
+            </div>
+        </div>
+        <div class="sm:flex-raw mt-6 mb-10 md:ml-150">
+            <div class="flex flex-row space-x-10">  
+                <a href="https://www.instagram.com/openbeetracker/" target="_blank">
+                    <img src="../assets\images/iconmonstr-instagram-11.svg" class="h-12 w-12">
+                </a>    
+                <a href="https://www.youtube.com/channel/UCApS3abjBtJ1s1E4VZDBLag" target="_blank">
+                    <img src="../assets\images/iconmonstr-youtube-6.svg" class="h-12 w-12">
+                </a>
             </div>
         </div>
     </footer>
