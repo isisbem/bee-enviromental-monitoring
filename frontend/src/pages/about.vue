@@ -22,15 +22,15 @@
         </div>
     </div> -->
     </div>
-          <div class="grid grid-cols-1 space-y-50 mb-60">
-        <div class="flex flex-row mx-auto space-x-40 mb-15"> 
+          <div class="grid grid-cols-1 space-y-70 mb-60">
+        <div class="flex flex-row mx-auto space-x-35 "> 
         <div class="flip-box">
           <div class="flip-box-inner relative">
             <div class="flip-box-front absolute w-50 h-50">
               <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
             </div>
             <div class="flip-box-back text-align-center">
-              <h2 class="text-color-black dark:text-white">Iorio Antonio</h2>
+              <h2 class="text-color-black dark:text-white justify-center text-center">Iorio Antonio</h2>
               <p class="text-color-black dark:text-white">Lorem ipsum dolor sit </p>
             </div>
           </div>
@@ -41,7 +41,7 @@
               <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
             </div>
             <div class="flip-box-back text-align-center">
-              <h2 class="text-color-black dark:text-white">Utente</h2>
+              <h2 class="text-color-black dark:text-white justify-center text-center">Utente</h2>
               <p class="text-color-black dark:text-white">Lorem ipsum dolor sit </p>
             </div>
           </div>
@@ -52,50 +52,122 @@
               <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
             </div>
             <div class="flip-box-back text-align-center">
-              <h2 class="text-color-black dark:text-white">Utente</h2>
-              <p class="text-color-black dark:text-white">Lorem ipsum dolor sit </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-row mx-auto space-x-40 mb-15"> 
-        <div class="flip-box">
-          <div class="flip-box-inner relative">
-            <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
-            </div>
-            <div class="flip-box-back text-align-center">
-              <h2 class="text-color-black dark:text-white">Iorio Antonio</h2>
-              <p class="text-color-black dark:text-white">Lorem ipsum dolor sit </p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-box">
-          <div class="flip-box-inner relative">
-            <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
-            </div>
-            <div class="flip-box-back text-align-center">
-              <h2 class="text-color-black dark:text-white">Utente</h2>
-              <p class="text-color-black dark:text-white">Lorem ipsum dolor sit </p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-box">
-          <div class="flip-box-inner relative">
-            <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
-            </div>
-            <div class="flip-box-back text-align-center">
-              <h2 class="text-color-black dark:text-white">Utente</h2>
+              <h2 class="text-color-black dark:text-white justify-center text-center">Utente</h2>
               <p class="text-color-black dark:text-white">Lorem ipsum dolor sit </p>
             </div>
           </div>
         </div>
       </div>
+      <div class="flex flex-row mx-auto space-x-35 "> 
+        <div class="flip-box">
+          <div class="flip-box-inner relative">
+            <div class="flip-box-front absolute w-50 h-50">
+              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+            </div>
+            <div class="flip-box-back text-align-center">
+              <h2 class="text-color-black dark:text-white justify-center text-center">Iorio Antonio</h2>
+              <p class="text-color-black dark:text-white">Lorem ipsum dolor sit </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-box">
+          <div class="flip-box-inner relative">
+            <div class="flip-box-front absolute w-50 h-50">
+              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+            </div>
+            <div class="flip-box-back text-align-center">
+              <h2 class="text-color-black dark:text-white justify-center text-center">Utente</h2>
+              <p class="text-color-black dark:text-white">Lorem ipsum dolor sit </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-box">
+          <div class="flip-box-inner relative">
+            <div class="flip-box-front absolute w-50 h-50">
+              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+            </div>
+            <div class="flip-box-back text-align-center">
+              <h2 class="text-color-black dark:text-white justify-center text-center">Utente</h2>
+              <p class="text-color-black dark:text-white">Lorem ipsum dolor sit </p>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="flex flex-row mx-auto space-x-35 "> 
+        <div class="flip-box">
+          <div class="flip-box-inner relative">
+            <div class="flip-box-front absolute w-50 h-50">
+              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+            </div>
+            <div class="flip-box-back text-align-center">
+              <h2 class="text-color-black dark:text-white justify-center text-center">Iorio Antonio</h2>
+              <p class="text-color-black dark:text-white">Lorem ipsum dolor sit </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-box">
+          <div class="flip-box-inner relative">
+            <div class="flip-box-front absolute w-50 h-50">
+              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+            </div>
+            <div class="flip-box-back text-align-center">
+              <h2 class="text-color-black dark:text-white justify-center text-center">Utente</h2>
+              <p class="text-color-black dark:text-white">Lorem ipsum dolor sit </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-box">
+          <div class="flip-box-inner relative">
+            <div class="flip-box-front absolute w-50 h-50">
+              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+            </div>
+            <div class="flip-box-back text-align-center">
+              <h2 class="text-color-black dark:text-white justify-center text-center">Utente</h2>
+              <p class="text-color-black dark:text-white">Lorem ipsum dolor sit </p>
+            </div>
+          </div>
+        </div>
+        </div>
+      <div class="flex flex-row mx-auto space-x-35 "> 
+        <div class="flip-box">
+          <div class="flip-box-inner relative">
+            <div class="flip-box-front absolute w-50 h-50">
+              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+            </div>
+            <div class="flip-box-back text-align-center">
+              <h2 class="text-color-black dark:text-white justify-center text-center">Iorio Antonio</h2>
+              <p class="text-color-black dark:text-white">Lorem ipsum dolor sit </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-box">
+          <div class="flip-box-inner relative">
+            <div class="flip-box-front absolute w-50 h-50">
+              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+            </div>
+            <div class="flip-box-back text-align-center">
+              <h2 class="text-color-black dark:text-white justify-center text-center">Utente</h2>
+              <p class="text-color-black dark:text-white">Lorem ipsum dolor sit </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-box">
+          <div class="flip-box-inner relative">
+            <div class="flip-box-front absolute w-50 h-50">
+              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+            </div>
+            <div class="flip-box-back text-align-center">
+              <h2 class="text-color-black dark:text-white justify-center text-center">Utente</h2>
+              <p class="text-color-black dark:text-white">Lorem ipsum dolor sit </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
   </main>
 </template>
+
 
 
 <style>
