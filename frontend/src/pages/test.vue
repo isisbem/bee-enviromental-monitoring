@@ -1,6 +1,7 @@
 <script setup>
 import Navbar from '../components/Navbar.vue';
 import Main from '../components/Main.vue';
+import { useDark, useToggle } from '@vueuse/core'
 </script>
 
 <script>
@@ -80,6 +81,11 @@ export default {
       </div>
     </div>
     <footer class="flex justify-center items-center space-x-3">
+    <div v-if="isDark">
+    <a href="https://www.instagram.com/openbeetracker/" target="_blank">
+      <img src="../assets\images/instagram.png" class="h-10 w-10">
+    </a>
+    </div>
     <a href="https://www.instagram.com/openbeetracker/" target="_blank">
       <img src="../assets\images/Logo Insta Custom 1.svg" class="h-10 w-10">
     </a>    

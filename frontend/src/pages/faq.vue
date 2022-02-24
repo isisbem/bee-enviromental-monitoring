@@ -45,6 +45,20 @@
               <DisclosurePanel class="px-4 pt-4 pb-2 text-sm text-black">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur mollitia voluptatem earum est voluptates corporis cum quas? Natus perspiciatis, ratione ipsa fugiat, mollitia atque cumque rem debitis temporibus quibusdam quos?
               </DisclosurePanel>
+            </Disclosure>
+            <Disclosure as="div" class="mt-2" v-slot="{ open }">
+              <DisclosureButton
+                class="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-dark-500 bg-yellow-400 rounded-lg hover:bg-yellow-300 focus:outline-none focus-visible:ring focus-visible:ring-yellow-500 focus-visible:ring-opacity-75"
+              >
+                <span><b>Domanda 3</b></span>
+                <ChevronUpIcon
+                  :class="open ? 'transform rotate-180' : ''"
+                  class="w-5 h-5 text-black"
+                />
+              </DisclosureButton>
+              <DisclosurePanel class="px-4 pt-4 pb-2 text-sm text-black">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur mollitia voluptatem earum est voluptates corporis cum quas? Natus perspiciatis, ratione ipsa fugiat, mollitia atque cumque rem debitis temporibus quibusdam quos?
+              </DisclosurePanel>
             </Disclosure>  
           </div>
         </div>
