@@ -4,7 +4,8 @@ import { setupLayouts } from "virtual:generated-layouts";
 import { createRouter, createWebHistory } from 'vue-router'
 import VueApexCharts from "vue3-apexcharts" 
 
-import "virtual:windi.css";
+import './index.css'
+import 'flowbite';
 
 import App from './App.vue'
 import generatedRoutes from "virtual:generated-pages";
