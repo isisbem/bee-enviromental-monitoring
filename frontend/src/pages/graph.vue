@@ -1,6 +1,6 @@
 <template>
-  <div class="border border-3 rounded-lg m-5 shadow-2xl border border-black bg-white dark:border-white dark:bg-true-gray-100">
-    <apexchart class="mt-4 mr-3" height="500" width="1200" type="area" :options="options" :series="series"></apexchart>
+  <div class="border border-3 rounded-lg m-5 shadow-2xl border border-black bg-white">
+    <apexchart class="mt-4 mr-3" height="500" width="1300" type="area" :options="options" :series="series"></apexchart>
   </div>
 </template>
 

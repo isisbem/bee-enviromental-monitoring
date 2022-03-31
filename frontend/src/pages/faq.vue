@@ -2,15 +2,15 @@
   <main class="mx-auto mt-4 max-w-7xl px-4 sm:mt-6 sm:px-6 md:mt-8 lg:mt-10 lg:px-8 xl:mt-19 overflow-x-hidden">
     <div class="flex flex-col md:flex-row justify-center items-center md:items-start">
       <h3 class="text-3xl tracking-tight font-extrabold sm:text-lg md:text-4xl">
-        <span class="block text-center text-black transition-colors duration-500 dark:text-white">Frequently</span>
+        <span class="block text-center text-black transition-colors duration-500">Frequently</span>
         <span class="block text-center text-yellow-500">Asked</span>
-        <span class="block text-center text-black transition-colors duration-500 dark:text-white">Questions</span>
+        <span class="block text-center text-black transition-colors duration-500">Questions</span>
         <div class="w-full">
           <img class="h-45 mt-8 max-w-sm" src="../assets/images/Logo FAQ 2.1.svg">
         </div>
       </h3>
       <div class="flex flex-col"> 
-        <h4 class="text-base text-center text-gray-700 tracking-tight m-4 sm:text-lg md:text-xl dark:text-gray-200">Qui puoi trovare le domande più frequenti che ci vengono poste, se ne hai altre non esitare a <a target="_blank" href="https://www.instagram.com/openbeetracker/" class="underline underline-offset-2">contattarci qui</a>!</h4>
+        <h4 class="text-base text-center text-gray-700 tracking-tight m-4 sm:text-lg md:text-xl">Qui puoi trovare le domande più frequenti che ci vengono poste, se ne hai altre non esitare a <a target="_blank" href="https://www.instagram.com/openbeetracker/" class="underline underline-offset-2">contattarci qui</a>!</h4>
         <!--<a class="h-8 justify-center content-center max-w-sm mx-auto" target="_blank" href="https://www.instagram.com/openbeetracker/">
           <button class="rounded-full p-2 border-2 border-black mx-auto bg-yellow-500 hover:bg-yellow-200">
             <img src="../assets/images/iconmonstr-instagram-11.svg">
