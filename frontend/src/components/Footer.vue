@@ -22,7 +22,7 @@ const features = [
       'Ci ringraziamo anche da soli in quanto siamo soddisfatti del lavoro effettuato. Ci siamo divisi in gruppi uniformi in modo da aiutarci a vicenda. Con l\'aiuto degli insegnanti abbiamo creato tre macro aree di lavoro: Area Tecnica, Area Creativa e Area Gestione. Per maggiori informazioni vi mandiamo alla pagina \"Chi siamo?\".',
   },
   {   
-    name: 'Cisco Netacad',
+    name: 'Altra caratteristica',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.'
   },
