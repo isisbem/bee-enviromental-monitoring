@@ -11,14 +11,14 @@
      <!--   <div class = "flex flex-row mx-auto space-x-6 flip-box-back">
           <h2>Prova</h2>
           <p>questa è una prova, minchia</p>
-          <div><img class="rounded-lg" src="../assets/images/immagine about prova.jpeg" ></div>
-          <div><img class="rounded-lg" src="../assets/images/immagine about prova.jpeg" ></div>
-          <div><img class="rounded-lg" src="../assets/images/immagine about prova.jpeg" ></div>
+          <div><img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg" ></div>
+          <div><img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg" ></div>
+          <div><img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg" ></div>
       </div>
         <div class = "flex flex-row mx-auto space-x-6">
-          <div><img class="rounded-lg" src="../assets/images/immagine about prova.jpeg" ></div>
-          <div><img class="rounded-lg" src="../assets/images/immagine about prova.jpeg" ></div>
-          <div><img class="rounded-lg" src="../assets/images/immagine about prova.jpeg" ></div>
+          <div><img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg" ></div>
+          <div><img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg" ></div>
+          <div><img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg" ></div>
         </div>
     </div> -->
     </div>
@@ -27,7 +27,7 @@
         <div class="flip-box">
           <div class="flip-box-inner relative">
             <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
             </div>
             <div class="flip-box-back text-align-center">
               <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Iorio Antonio</h2>
@@ -38,7 +38,7 @@
         <div class="flip-box">
           <div class="flip-box-inner relative">
             <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
             </div>
             <div class="flip-box-back text-align-center">
               <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Utente</h2>
@@ -49,7 +49,7 @@
         <div class="flip-box">
           <div class="flip-box-inner relative">
             <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
             </div>
             <div class="flip-box-back text-align-center">
               <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Utente</h2>
@@ -62,7 +62,7 @@
         <div class="flip-box">
           <div class="flip-box-inner relative">
             <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
             </div>
             <div class="flip-box-back text-align-center">
               <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Iorio Antonio</h2>
@@ -73,7 +73,7 @@
         <div class="flip-box">
           <div class="flip-box-inner relative">
             <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
             </div>
             <div class="flip-box-back text-align-center">
               <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Utente</h2>
@@ -84,7 +84,7 @@
         <div class="flip-box">
           <div class="flip-box-inner relative">
             <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
             </div>
             <div class="flip-box-back text-align-center">
               <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Utente</h2>
@@ -97,7 +97,7 @@
         <div class="flip-box">
           <div class="flip-box-inner relative">
             <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
             </div>
             <div class="flip-box-back text-align-center">
               <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Iorio Antonio</h2>
@@ -108,7 +108,7 @@
         <div class="flip-box">
           <div class="flip-box-inner relative">
             <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
             </div>
             <div class="flip-box-back text-align-center">
               <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Utente</h2>
@@ -119,7 +119,7 @@
         <div class="flip-box">
           <div class="flip-box-inner relative">
             <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
             </div>
             <div class="flip-box-back text-align-center">
               <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Utente</h2>
@@ -132,7 +132,7 @@
         <div class="flip-box">
           <div class="flip-box-inner relative">
             <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
             </div>
             <div class="flip-box-back text-align-center">
               <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Iorio Antonio</h2>
@@ -143,7 +143,7 @@
         <div class="flip-box">
           <div class="flip-box-inner relative">
             <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
             </div>
             <div class="flip-box-back text-align-center">
               <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Utente</h2>
@@ -154,7 +154,7 @@
         <div class="flip-box">
           <div class="flip-box-inner relative">
             <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine about prova.jpeg">
+              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
             </div>
             <div class="flip-box-back text-align-center">
               <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Utente</h2>
