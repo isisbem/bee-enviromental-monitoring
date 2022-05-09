@@ -64,7 +64,7 @@ export default {
                   >
                     Prova a HOverarmi
                   </span>
-                  <span v-if="hover"><img src="../assets/images/logo-insta.svg 1.svg"></span>
+                  <span v-if="hover"><img src="../assets/images/logo-insta.svg"></span>
                 </div>
               <Menu as="div" class="mx-100 relative inline-block text-left">
                 <div>
@@ -87,7 +87,7 @@ export default {
     </a>
     </div>
     <a href="https://www.instagram.com/openbeetracker/" target="_blank">
-      <img src="../assets\images/logo-insta.svg 1.svg" class="h-10 w-10">
+      <img src="../assets\images/logo-insta.svg" class="h-10 w-10">
     </a>    
     <a href="https://www.youtube.com/channel/UCApS3abjBtJ1s1E4VZDBLag" target="_blank">
       <img src="../assets\images/logo-yt-custom-2.svg" class="h-10 w-10">

@@ -6,7 +6,7 @@
         <span class="block text-center text-yellow-500">Asked</span>
         <span class="block text-center text-black transition-colors duration-500">Questions</span>
         <div class="w-full">
-          <img class="h-45 mt-8 max-w-sm" src="../assets/images/logo-faq.svg 2.1.svg">
+          <img class="h-45 mt-8 max-w-sm" src="../assets/images/logo-faq.svg">
         </div>
       </h3>
       <div class="flex flex-col"> 

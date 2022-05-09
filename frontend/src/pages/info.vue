@@ -73,7 +73,7 @@
                   </span>
                 </div>
                 <div>
-                  <span v-if="hover"><img class="ml-10 h-8 w-8" src="../assets/images/logo-insta.svg 1.svg"></span>
+                  <span v-if="hover"><img class="ml-10 h-8 w-8" src="../assets/images/logo-insta.svg"></span>
                 </div>
               </div>
               <div class="grid grid-cols-2">
@@ -106,7 +106,7 @@
             <div>
           <!--<a class="h-15 justify-center content-center max-w-sm mx-auto" target="_blank">
                 <button class="rounded-full p-3 border-2 mx-auto">
-                  <img class="h-10" src="../assets/images/logo-insta.svg 1.svg">
+                  <img class="h-10" src="../assets/images/logo-insta.svg">
                 </button>
               </a>-->
             </div>
@@ -116,7 +116,7 @@
     </div>
     <div class="border-t border-gray-300 mx-auto">
       <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title my-10">FlowChart</p>
-      <img class="mx-auto my-5" src="../assets/images/ape - Main.svg"> 
+      <img class="mx-auto my-5" src="../assets/images/logo-main-fine.svg"> 
       <div class="text-center">
         <a href="\file\ape.fprg" download="BeeFlowChart.fprg">
           <button class="transition-colors focus:outline-none text-white bg-bee hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-200 font-medium rounded-lg text-lg px-10 py-5 mr-2 mb-2 mt-5">Scarica qua il FlowChart</button>
