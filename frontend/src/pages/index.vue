@@ -16,7 +16,7 @@
             Informazioni dettagliate
           </a> -->
         <router-link to="/info" class="w-full transition-colors focus:outline-none text-white bg-bee hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-200 font-medium rounded-lg text-lg px-6 py-4 mr-2 mb-2">Informazioni dettagliate</router-link>
-        <router-link to="/grafici" class="w-full transition-colors focus:outline-none text-white bg-bee hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-200 font-medium rounded-lg text-lg px-6 py-4 mr-2 mb-2">Graficazione dati</router-link>
+        <router-link to="/graph" class="w-full transition-colors focus:outline-none text-white bg-bee hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-200 font-medium rounded-lg text-lg px-6 py-4 mr-2 mb-2">Graficazione dati</router-link>
       </div>
     </div>
     <div class="h-px bg-gray-200 w-full mt-10"></div>

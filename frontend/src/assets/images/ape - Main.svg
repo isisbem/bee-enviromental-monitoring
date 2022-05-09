@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by Flowgorithm 2.30.3 (http://flowgorithm.org) -->
+
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="5025" height="4350">
+	<g>
+		<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="325,125 325,186"/>
+		<polygon fill="#404040" stroke="none" points="325,200 338,175 311,175"/>
+		<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="325,4075 325,4211"/>
+		<polygon fill="#404040" stroke="none" points="325,4225 338,4200 311,4200"/>
+		<g>
+			<path fill="#F0D0FF" stroke="#9070A0" stroke-width="3" stroke-dasharray="none" d="M 225,25 A 50,50 0 0,0 225,125 L 425,125 A 50,50 0 0,0 425,25 Z"/>
+			<text x="325" y="40" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+				<tspan x="325" dy="50" unicode-bidi="embed">Inizio</tspan>
+			</text>
+		</g>
+		<g>
+			<path fill="#F0D0FF" stroke="#9070A0" stroke-width="3" stroke-dasharray="none" d="M 225,4225 A 50,50 0 0,0 225,4325 L 425,4325 A 50,50 0 0,0 425,4225 Z"/>
+			<text x="325" y="4240" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+				<tspan x="325" dy="50" unicode-bidi="embed">Fine</tspan>
+			</text>
+		</g>
+		<g>
+			<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="325,375 325,436"/>
+			<polygon fill="#404040" stroke="none" points="325,450 338,425 311,425"/>
+			<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="325,625 325,686"/>
+			<polygon fill="#404040" stroke="none" points="325,700 338,675 311,675"/>
+			<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="325,875 325,936"/>
+			<polygon fill="#404040" stroke="none" points="325,950 338,925 311,925"/>
+			<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="325,1125 325,1186"/>
+			<polygon fill="#404040" stroke="none" points="325,1200 338,1175 311,1175"/>
+			<g>
+				<path fill="#FFFFD0" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" d="M 25,200 L 25,375 L 625,375 L 625,200 Z"/>
+				<polyline fill="none" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" points="25,225 625,225"/>
+				<polyline fill="none" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" points="50,200 50,375"/>
+				<text x="337" y="240" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+					<tspan x="337" dy="50" unicode-bidi="embed">Dichiara</tspan>
+					<tspan x="337" dy="50" unicode-bidi="embed"> sensoreinterno: Booleano</tspan>
+				</text>
+			</g>
+			<g>
+				<path fill="#FFFFD0" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" d="M 25,450 L 25,625 L 625,625 L 625,450 Z"/>
+				<polyline fill="none" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" points="25,475 625,475"/>
+				<polyline fill="none" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" points="50,450 50,625"/>
+				<text x="337" y="490" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+					<tspan x="337" dy="50" unicode-bidi="embed">Dichiara</tspan>
+					<tspan x="337" dy="50" unicode-bidi="embed"> sensoreesterno: Booleano</tspan>
+				</text>
+			</g>
+			<g>
+				<path fill="#FFFFD0" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" d="M 25,700 L 25,875 L 625,875 L 625,700 Z"/>
+				<polyline fill="none" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" points="25,725 625,725"/>
+				<polyline fill="none" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" points="50,700 50,875"/>
+				<text x="337" y="740" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+					<tspan x="337" dy="50" unicode-bidi="embed">Dichiara</tspan>
+					<tspan x="337" dy="50" unicode-bidi="embed"> eventoPrecedente: Stringa</tspan>
+				</text>
+			</g>
+			<g>
+				<path fill="#FFFFD0" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" d="M 50,950 L 50,1125 L 600,1125 L 600,950 Z"/>
+				<polyline fill="none" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" points="50,975 600,975"/>
+				<polyline fill="none" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" points="75,950 75,1125"/>
+				<text x="337" y="990" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+					<tspan x="337" dy="50" unicode-bidi="embed">Dichiara</tspan>
+					<tspan x="337" dy="50" unicode-bidi="embed"> eventoCorrente: Stringa</tspan>
+				</text>
+			</g>
+			<g>
+				<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="350,1225 2925,1225 2925,1311"/>
+				<polygon fill="#404040" stroke="none" points="2925,1325 2938,1300 2911,1300"/>
+				<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="2925,3900 2925,4025 488,4025"/>
+				<polygon fill="#404040" stroke="none" points="475,4025 499,4038 499,4011"/>
+				<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="325,3975 325,1263"/>
+				<polygon fill="#404040" stroke="none" points="325,1250 311,1274 338,1274"/>
+				<text x="250" y="3890" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+					<tspan x="250" dy="50" unicode-bidi="embed">Vero</tspan>
+				</text>
+				<text x="237" y="4090" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+					<tspan x="237" dy="50" unicode-bidi="embed">Falso</tspan>
+				</text>
+				<g>
+					<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="3125,1450 4250,1450 4250,1611"/>
+					<polygon fill="#404040" stroke="none" points="4250,1625 4263,1600 4236,1600"/>
+					<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="4250,3350 4250,3875 2963,3875"/>
+					<polygon fill="#404040" stroke="none" points="2950,3875 2974,3888 2974,3861"/>
+					<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="2725,1450 800,1450 800,1611"/>
+					<polygon fill="#404040" stroke="none" points="800,1625 813,1600 786,1600"/>
+					<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="800,3775 800,3875 2886,3875"/>
+					<polygon fill="#404040" stroke="none" points="2900,3875 2875,3861 2875,3888"/>
+					<g>
+						<path fill="#FFD0D0" stroke="#A07070" stroke-width="3" stroke-dasharray="none" d="M 2925,1325 L 2700,1450 L 2925,1575 L 3150,1450 Z"/>
+						<text x="2925" y="1415" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+							<tspan x="2925" dy="50" unicode-bidi="embed">sensoreinterno</tspan>
+						</text>
+					</g>
+					<g>
+						<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="4250,1725 4250,1786"/>
+						<polygon fill="#404040" stroke="none" points="4250,1800 4263,1775 4236,1775"/>
+						<g>
+							<path fill="#FFFFD0" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" d="M 4025,1625 L 4025,1725 L 4475,1725 L 4475,1625 Z"/>
+							<text x="4250" y="1640" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+								<tspan x="4250" dy="50" unicode-bidi="embed">eventoCorrente = &quot;i&quot;</tspan>
+							</text>
+						</g>
+						<g>
+							<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="4550,1975 4700,1975 4700,2186"/>
+							<polygon fill="#404040" stroke="none" points="4700,2200 4713,2175 4686,2175"/>
+							<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="4700,2650 4700,3325 4288,3325"/>
+							<polygon fill="#404040" stroke="none" points="4275,3325 4299,3338 4299,3311"/>
+							<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="3950,1975 3450,1975 3450,2186"/>
+							<polygon fill="#404040" stroke="none" points="3450,2200 3463,2175 3436,2175"/>
+							<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="3450,3225 3450,3325 4211,3325"/>
+							<polygon fill="#404040" stroke="none" points="4225,3325 4200,3311 4200,3338"/>
+							<g>
+								<path fill="#FFD0D0" stroke="#A07070" stroke-width="3" stroke-dasharray="none" d="M 4250,1800 L 3925,1975 L 4250,2150 L 4575,1975 Z"/>
+								<text x="4250" y="1940" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+									<tspan x="4250" dy="50" unicode-bidi="embed">eventoPrecedente == &quot;e&quot;</tspan>
+								</text>
+							</g>
+							<g>
+								<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="4700,2300 4700,2361"/>
+								<polygon fill="#404040" stroke="none" points="4700,2375 4713,2350 4686,2350"/>
+								<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="4700,2475 4700,2536"/>
+								<polygon fill="#404040" stroke="none" points="4700,2550 4713,2525 4686,2525"/>
+								<g>
+									<path fill="#D0FFD0" stroke="#70A070" stroke-width="3" stroke-dasharray="none" d="M 4450,2200 L 4400,2300 L 4950,2300 L 5000,2200 Z"/>
+									<text x="4700" y="2215" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+										<tspan x="4700" dy="50" unicode-bidi="embed">Scrivi &quot;L'ape &#232; entrata&quot;</tspan>
+									</text>
+								</g>
+								<g>
+									<path fill="#FFFFD0" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" d="M 4425,2375 L 4425,2475 L 4975,2475 L 4975,2375 Z"/>
+									<text x="4700" y="2390" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+										<tspan x="4700" dy="50" unicode-bidi="embed">eventoPrecedente = null</tspan>
+									</text>
+								</g>
+								<g>
+									<path fill="#FFFFD0" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" d="M 4450,2550 L 4450,2650 L 4950,2650 L 4950,2550 Z"/>
+									<text x="4700" y="2565" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+										<tspan x="4700" dy="50" unicode-bidi="embed">eventoCorrente = null</tspan>
+									</text>
+								</g>
+							</g>
+							<g>
+								<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="3750,2375 3900,2375 3900,2586"/>
+								<polygon fill="#404040" stroke="none" points="3900,2600 3913,2575 3886,2575"/>
+								<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="3900,3100 3900,3200 3488,3200"/>
+								<polygon fill="#404040" stroke="none" points="3475,3200 3499,3213 3499,3186"/>
+								<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="3150,2375 2975,2375 2975,3200 3411,3200"/>
+								<polygon fill="#404040" stroke="none" points="3425,3200 3400,3186 3400,3213"/>
+								<g>
+									<path fill="#FFD0D0" stroke="#A07070" stroke-width="3" stroke-dasharray="none" d="M 3450,2200 L 3125,2375 L 3450,2550 L 3775,2375 Z"/>
+									<text x="3450" y="2340" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+										<tspan x="3450" dy="50" unicode-bidi="embed">eventoPrecedente == &quot;i&quot;</tspan>
+									</text>
+								</g>
+								<g>
+									<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="3900,2750 3900,2811"/>
+									<polygon fill="#404040" stroke="none" points="3900,2825 3913,2800 3886,2800"/>
+									<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="3900,2925 3900,2986"/>
+									<polygon fill="#404040" stroke="none" points="3900,3000 3913,2975 3886,2975"/>
+									<g>
+										<path fill="#D0FFD0" stroke="#70A070" stroke-width="3" stroke-dasharray="none" d="M 3675,2600 L 3600,2750 L 4125,2750 L 4200,2600 Z"/>
+										<text x="3900" y="2615" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+											<tspan x="3900" dy="50" unicode-bidi="embed">Scrivi &quot;Rilevamento</tspan>
+											<tspan x="3900" dy="50" unicode-bidi="embed"> annullato&quot;</tspan>
+										</text>
+									</g>
+									<g>
+										<path fill="#FFFFD0" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" d="M 3625,2825 L 3625,2925 L 4175,2925 L 4175,2825 Z"/>
+										<text x="3900" y="2840" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+											<tspan x="3900" dy="50" unicode-bidi="embed">eventoPrecedente = null</tspan>
+										</text>
+									</g>
+									<g>
+										<path fill="#FFFFD0" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" d="M 3650,3000 L 3650,3100 L 4150,3100 L 4150,3000 Z"/>
+										<text x="3900" y="3015" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+											<tspan x="3900" dy="50" unicode-bidi="embed">eventoCorrente = null</tspan>
+										</text>
+									</g>
+								</g>
+								<g>
+								</g>
+								<ellipse cx="3450" cy="3200" rx="25" ry="25" fill="#FFD0D0" stroke="#A07070" stroke-width="3"/>
+								<text x="3850" y="2290" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+									<tspan x="3850" dy="50" unicode-bidi="embed">Vero</tspan>
+								</text>
+								<text x="3037" y="2290" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+									<tspan x="3037" dy="50" unicode-bidi="embed">Falso</tspan>
+								</text>
+							</g>
+							<ellipse cx="4250" cy="3325" rx="25" ry="25" fill="#FFD0D0" stroke="#A07070" stroke-width="3"/>
+							<text x="4650" y="1890" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+								<tspan x="4650" dy="50" unicode-bidi="embed">Vero</tspan>
+							</text>
+							<text x="3837" y="1890" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+								<tspan x="3837" dy="50" unicode-bidi="embed">Falso</tspan>
+							</text>
+						</g>
+					</g>
+					<g>
+						<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="1000,1750 2125,1750 2125,1911"/>
+						<polygon fill="#404040" stroke="none" points="2125,1925 2138,1900 2111,1900"/>
+						<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="2125,3650 2125,3750 838,3750"/>
+						<polygon fill="#404040" stroke="none" points="825,3750 849,3763 849,3736"/>
+						<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="600,1750 425,1750 425,3750 761,3750"/>
+						<polygon fill="#404040" stroke="none" points="775,3750 750,3736 750,3763"/>
+						<g>
+							<path fill="#FFD0D0" stroke="#A07070" stroke-width="3" stroke-dasharray="none" d="M 800,1625 L 575,1750 L 800,1875 L 1025,1750 Z"/>
+							<text x="800" y="1715" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+								<tspan x="800" dy="50" unicode-bidi="embed">sensoreesterno</tspan>
+							</text>
+						</g>
+						<g>
+							<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="2125,2025 2125,2086"/>
+							<polygon fill="#404040" stroke="none" points="2125,2100 2138,2075 2111,2075"/>
+							<g>
+								<path fill="#FFFFD0" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" d="M 1875,1925 L 1875,2025 L 2375,2025 L 2375,1925 Z"/>
+								<text x="2125" y="1940" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+									<tspan x="2125" dy="50" unicode-bidi="embed">eventoCorrente = &quot;e&quot;</tspan>
+								</text>
+							</g>
+							<g>
+								<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="2425,2275 2575,2275 2575,2486"/>
+								<polygon fill="#404040" stroke="none" points="2575,2500 2588,2475 2561,2475"/>
+								<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="2575,2950 2575,3625 2163,3625"/>
+								<polygon fill="#404040" stroke="none" points="2150,3625 2174,3638 2174,3611"/>
+								<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="1825,2275 1325,2275 1325,2486"/>
+								<polygon fill="#404040" stroke="none" points="1325,2500 1338,2475 1311,2475"/>
+								<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="1325,3525 1325,3625 2086,3625"/>
+								<polygon fill="#404040" stroke="none" points="2100,3625 2075,3611 2075,3638"/>
+								<g>
+									<path fill="#FFD0D0" stroke="#A07070" stroke-width="3" stroke-dasharray="none" d="M 2125,2100 L 1800,2275 L 2125,2450 L 2450,2275 Z"/>
+									<text x="2125" y="2240" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+										<tspan x="2125" dy="50" unicode-bidi="embed">eventoPrecedente == &quot;i&quot;</tspan>
+									</text>
+								</g>
+								<g>
+									<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="2575,2600 2575,2661"/>
+									<polygon fill="#404040" stroke="none" points="2575,2675 2588,2650 2561,2650"/>
+									<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="2575,2775 2575,2836"/>
+									<polygon fill="#404040" stroke="none" points="2575,2850 2588,2825 2561,2825"/>
+									<g>
+										<path fill="#D0FFD0" stroke="#70A070" stroke-width="3" stroke-dasharray="none" d="M 2325,2500 L 2275,2600 L 2825,2600 L 2875,2500 Z"/>
+										<text x="2575" y="2515" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+											<tspan x="2575" dy="50" unicode-bidi="embed">Scrivi &quot;l'ape &#232; uscita&quot;</tspan>
+										</text>
+									</g>
+									<g>
+										<path fill="#FFFFD0" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" d="M 2300,2675 L 2300,2775 L 2850,2775 L 2850,2675 Z"/>
+										<text x="2575" y="2690" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+											<tspan x="2575" dy="50" unicode-bidi="embed">eventoPrecedente = null</tspan>
+										</text>
+									</g>
+									<g>
+										<path fill="#FFFFD0" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" d="M 2325,2850 L 2325,2950 L 2825,2950 L 2825,2850 Z"/>
+										<text x="2575" y="2865" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+											<tspan x="2575" dy="50" unicode-bidi="embed">eventoCorrente = null</tspan>
+										</text>
+									</g>
+								</g>
+								<g>
+									<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="1625,2675 1775,2675 1775,2886"/>
+									<polygon fill="#404040" stroke="none" points="1775,2900 1788,2875 1761,2875"/>
+									<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="1775,3400 1775,3500 1363,3500"/>
+									<polygon fill="#404040" stroke="none" points="1350,3500 1374,3513 1374,3486"/>
+									<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="1025,2675 850,2675 850,3500 1286,3500"/>
+									<polygon fill="#404040" stroke="none" points="1300,3500 1275,3486 1275,3513"/>
+									<g>
+										<path fill="#FFD0D0" stroke="#A07070" stroke-width="3" stroke-dasharray="none" d="M 1325,2500 L 1000,2675 L 1325,2850 L 1650,2675 Z"/>
+										<text x="1325" y="2640" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+											<tspan x="1325" dy="50" unicode-bidi="embed">eventoPrecedente == &quot;e&quot;</tspan>
+										</text>
+									</g>
+									<g>
+										<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="1775,3050 1775,3111"/>
+										<polygon fill="#404040" stroke="none" points="1775,3125 1788,3100 1761,3100"/>
+										<polyline fill="none" stroke="#404040" stroke-width="6" stroke-dasharray="none" points="1775,3225 1775,3286"/>
+										<polygon fill="#404040" stroke="none" points="1775,3300 1788,3275 1761,3275"/>
+										<g>
+											<path fill="#D0FFD0" stroke="#70A070" stroke-width="3" stroke-dasharray="none" d="M 1550,2900 L 1475,3050 L 2000,3050 L 2075,2900 Z"/>
+											<text x="1775" y="2915" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+												<tspan x="1775" dy="50" unicode-bidi="embed">Scrivi &quot;Rilevamento</tspan>
+												<tspan x="1775" dy="50" unicode-bidi="embed"> annullato&quot;</tspan>
+											</text>
+										</g>
+										<g>
+											<path fill="#FFFFD0" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" d="M 1500,3125 L 1500,3225 L 2050,3225 L 2050,3125 Z"/>
+											<text x="1775" y="3140" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+												<tspan x="1775" dy="50" unicode-bidi="embed">eventoPrecedente = null</tspan>
+											</text>
+										</g>
+										<g>
+											<path fill="#FFFFD0" stroke="#A0A070" stroke-width="3" stroke-dasharray="none" d="M 1525,3300 L 1525,3400 L 2025,3400 L 2025,3300 Z"/>
+											<text x="1775" y="3315" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+												<tspan x="1775" dy="50" unicode-bidi="embed">eventoCorrente = null</tspan>
+											</text>
+										</g>
+									</g>
+									<g>
+									</g>
+									<ellipse cx="1325" cy="3500" rx="25" ry="25" fill="#FFD0D0" stroke="#A07070" stroke-width="3"/>
+									<text x="1725" y="2590" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+										<tspan x="1725" dy="50" unicode-bidi="embed">Vero</tspan>
+									</text>
+									<text x="912" y="2590" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+										<tspan x="912" dy="50" unicode-bidi="embed">Falso</tspan>
+									</text>
+								</g>
+								<ellipse cx="2125" cy="3625" rx="25" ry="25" fill="#FFD0D0" stroke="#A07070" stroke-width="3"/>
+								<text x="2525" y="2190" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+									<tspan x="2525" dy="50" unicode-bidi="embed">Vero</tspan>
+								</text>
+								<text x="1712" y="2190" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+									<tspan x="1712" dy="50" unicode-bidi="embed">Falso</tspan>
+								</text>
+							</g>
+						</g>
+						<g>
+						</g>
+						<ellipse cx="800" cy="3750" rx="25" ry="25" fill="#FFD0D0" stroke="#A07070" stroke-width="3"/>
+						<text x="1100" y="1665" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+							<tspan x="1100" dy="50" unicode-bidi="embed">Vero</tspan>
+						</text>
+						<text x="487" y="1665" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+							<tspan x="487" dy="50" unicode-bidi="embed">Falso</tspan>
+						</text>
+					</g>
+					<ellipse cx="2925" cy="3875" rx="25" ry="25" fill="#FFD0D0" stroke="#A07070" stroke-width="3"/>
+					<text x="3225" y="1365" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+						<tspan x="3225" dy="50" unicode-bidi="embed">Vero</tspan>
+					</text>
+					<text x="2612" y="1365" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+						<tspan x="2612" dy="50" unicode-bidi="embed">Falso</tspan>
+					</text>
+				</g>
+				<g>
+					<path fill="#FFE0A0" stroke="#A08040" stroke-width="3" stroke-dasharray="none" d="M 225,3975 L 175,4025 L 225,4075 L 425,4075 L 475,4025 L 425,3975 Z"/>
+					<text x="325" y="3990" fill="#000000" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+						<tspan x="325" dy="50" unicode-bidi="embed">true</tspan>
+					</text>
+				</g>
+				<ellipse cx="325" cy="1225" rx="25" ry="25" fill="#FFE0A0" stroke="#A08040" stroke-width="3"/>
+			</g>
+		</g>
+	</g>
+</svg>

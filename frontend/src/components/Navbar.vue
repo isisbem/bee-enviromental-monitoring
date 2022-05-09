@@ -39,7 +39,7 @@ const mobileMenu = ref(false)
             <a href="#" class="block py-2 pr-4 pl-3 text-white bg-yellow-300 rounded md:bg-transparent md:text-yellow-300 md:p-0 dark:text-white" aria-current="page">Home</a>
           </li> -->
           <li v-for="link in links">
-            <a :href="link.url" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0">{{ link.name }}</a>
+            <router-link :to="link.url" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-yellow-300 md:p-0">{{ link.name }}</router-link>
           </li>
         </ul>
       </div>
