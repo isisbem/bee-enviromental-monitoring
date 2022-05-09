@@ -99,7 +99,7 @@
                   </span>
                 </div>
                 <div>
-                  <span v-if="hover2"><img class="ml-10 h-8 w-8" src="../assets/images/"></span>
+                  <!-- <span v-if="hover2"><img class="ml-10 h-8 w-8" src="../assets/images/"></span> -->
                 </div>
               </div>
             </div>
