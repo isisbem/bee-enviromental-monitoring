@@ -1,7 +1,6 @@
 <template>
   <div class="mt-5 mx-auto max-w-7xl px-4 sm:mt-3 sm:px-6 md:mt-4 lg:mt-5 lg:px-8 xl:mt-10">
     <div class="sm:flex flex-col justify-center items-center text-center">
-      <!-- <img src="../assets/images/Logo BEM - Ape.svg" class="h-30 w-30 mx-auto"> -->
       <img src="../assets/images/Logo BEM - Scritta.svg" class="h-50 w-80 mx-auto">
       <!-- <h1 class="text-4xl tracking-tight font-extrabold flex justify-center items-center sm:text-5xl md:text-6xl">
         <span class="text-yellow-500">Open</span>
