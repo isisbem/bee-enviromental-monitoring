@@ -70,7 +70,7 @@ export default {
         <div class="w-full bg-gray-100 p-3 flex justify-between">
             <div>
                 <p class="text-sm font-base text-gray-400 dark:text-true-gray-400">
-                    © 2022 - Bee Environment Monitoring
+                    © 2022 - Open Bee Tracker
                 </p>
             </div>
             <div class="flex space-x-5">

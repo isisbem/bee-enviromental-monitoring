@@ -73,7 +73,7 @@
                   </span>
                 </div>
                 <div>
-                  <span v-if="hover"><img class="ml-10 h-8 w-8" src="../assets/images/Logo Insta Custom 1.svg"></span>
+                  <span v-if="hover"><img class="ml-10 h-8 w-8" src="../assets/images/logo-insta.svg 1.svg"></span>
                 </div>
               </div>
               <div class="grid grid-cols-2">
@@ -86,7 +86,7 @@
                   </span>
                 </div>
                 <div>
-                  <span v-if="hover1"><img class="ml-10 h-8 w-8" src="../assets/images/Logo YT Custom 2.svg"></span>
+                  <span v-if="hover1"><img class="ml-10 h-8 w-8" src="../assets/images/logo-yt-custom-2.svg"></span>
                 </div>
               </div>
               <div class="grid grid-cols-2">
@@ -106,7 +106,7 @@
             <div>
           <!--<a class="h-15 justify-center content-center max-w-sm mx-auto" target="_blank">
                 <button class="rounded-full p-3 border-2 mx-auto">
-                  <img class="h-10" src="../assets/images/Logo Insta Custom 1.svg">
+                  <img class="h-10" src="../assets/images/logo-insta.svg 1.svg">
                 </button>
               </a>-->
             </div>
