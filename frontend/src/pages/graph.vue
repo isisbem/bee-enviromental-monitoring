@@ -13,7 +13,8 @@
 <script setup>
   const options = {
     chart: {
-      height: 350
+      height: 350,
+      width: "100%"
     },
     plotOptions: {
       bar: {

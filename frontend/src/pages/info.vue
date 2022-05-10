@@ -27,7 +27,7 @@
             Nome completo
           </dt>
           <dd class="mt-1 font-bold text-md text-gray-900 dark:text-gray-300 sm:mt-0 sm:col-span-2">
-            Open Bee tracker
+            Open Bee Tracker
           </dd>
         </div>
         <div class="px-4 py-5 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 border-b border-gray-300">
@@ -116,10 +116,13 @@
     </div>
     <div class="border-t border-gray-300 mx-auto">
       <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title my-10">FlowChart</p>
-      <img class="mx-auto my-5" src="../assets/images/logo-main-fine.svg"> 
+      <img class="mx-auto my-5" src="../assets/images/ape-main.svg"> 
       <div class="text-center">
         <a href="\file\ape.fprg" download="BeeFlowChart.fprg">
-          <button class="transition-colors focus:outline-none text-white bg-bee hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-200 font-medium rounded-lg text-lg px-10 py-5 mr-2 mb-2 mt-5">Scarica qua il FlowChart</button>
+          <button class="transition-colors focus:outline-none text-white bg-bee hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-200 font-medium rounded-lg text-lg px-10 py-5 mr-2 mb-2 mt-5">Scarica qua il FlowChart (FPRG)</button>
+        </a>
+        <a href="\file\apechart.png" download="BeeFlowChart.png">
+          <button class="transition-colors focus:outline-none text-white bg-bee hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-200 font-medium rounded-lg text-lg px-10 py-5 mr-2 mb-2 mt-5">Scarica qua il FlowChart (PNG)</button>
         </a>
       </div>
     </div>
