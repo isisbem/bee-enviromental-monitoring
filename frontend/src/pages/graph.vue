@@ -6,7 +6,7 @@
     <iframe class="mx-auto" src="https://giphy.com/embed/U3BTX5PTN8UwJGZid0" width="800" height="800" frameBorder="0" allowFullScreen></iframe>
   </div>
   <div class="mt-10 mx-auto border border-black">
-    <img class="mx-auto" width="1000" src="../assets/images/queen-bee-national-honey-bee-day.gif">
+    <img class="mx-auto" width="1000" src="../assets/images/ape-animazione.gif">
   </div>
 </template>
 

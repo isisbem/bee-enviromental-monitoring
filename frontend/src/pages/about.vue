@@ -1,11 +1,13 @@
 <template>
   <main >
-    <div class="mt-5 sm:flex flex-col justify-center items-center text-center flex-grow mx-40 font-serif">  
+    <div class="mt-5 sm:flex flex-col justify-center items-center text-center flex-grow mx-auto font-serif">  
       <img src="../assets/images/coso.jpeg" class="h-max w-max" >
       <div class="mt-10 mb-20 p-5 md:container border-1 border-black rounded-lg dark:border-white">
-        <p class="indent-18 text-center text-gray-700  dark:text-white">
+        <p class="text-center text-gray-700  dark:text-white">
           Vi state chiedendo chi siamo, <b>bene</b>! Noi siamo una classe quarta dell'istituto tecnico 
-          Guglielmo Marconi, di Staranzano. Ci è stato affidato il compito di gestire  
+          Guglielmo Marconi, di Staranzano. Ci è stato affidato il compito di gestire
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, autem sequi sint vitae obcaecati quia harum facere repellat quaerat, molestias accusamus minima. Similique modi minima dolorum mollitia, necessitatibus cupiditate doloribus.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime necessitatibus, vel voluptas tempore magni id blanditiis. Cum ipsum, error saepe harum iusto, est autem repudiandae dolor possimus voluptatum suscipit rem!
           </p>
       </div>
      <!--   <div class = "flex flex-row mx-auto space-x-6 flip-box-back">
@@ -22,6 +24,8 @@
         </div>
     </div> -->
     </div>
+    <div>
+      <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title mb-5">Il team di lavoro</p>
       <div class="grid grid-cols-1 space-y-44 mb-40">
         <div class="flex flex-row mx-auto space-x-10 "> 
         <div class="flip-box">
@@ -163,6 +167,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
     <div class="grid grid-rows-3">
       <div class="container">

@@ -1,7 +1,7 @@
 <template>
   <div class="mt-5 mx-auto max-w-7xl px-4 sm:mt-3 sm:px-6 md:mt-4 lg:mt-5 lg:px-8 xl:mt-10">
     <div class="sm:flex flex-col justify-center items-center text-center">
-      <img src="../assets/images/logo-scritta.svg" class="h-50 w-80 mx-auto">
+      <img src="../assets/images/Logo-OBT-HOMEPAGE.svg" class="h-50 w-80 mx-auto">
       <!-- <h1 class="text-4xl tracking-tight font-extrabold flex justify-center items-center sm:text-5xl md:text-6xl">
         <span class="text-yellow-500">Open</span>
         <span class="text-black transition-colors duration-700 dark:text-white">Bee</span>
