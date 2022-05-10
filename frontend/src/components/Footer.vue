@@ -42,11 +42,11 @@ export default {
         <div class="py-10">
             <div class="mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="lg:text-center">
-                    <h1 class="text-bee font-semibold tracking-wide uppercase text-3xl font-title">Ringraziamenti</h1>
-                    <p class="mt-2 text-3xl font-title uppercase leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl dark:text-white">
+                    <h1 class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title">Ringraziamenti</h1>
+                    <p class="text-center mt-2 text-3xl font-title uppercase leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl dark:text-white">
                         Ringraziamo soprattutto i seguenti partecipanti al progetto
                     </p>
-                    <p class="mt-4 max-w-2xl text-xl text-gray-500 dark:text-gray-400 lg:mx-auto">
+                    <p class="text-center mt-4 max-w-2xl text-xl text-gray-500 dark:text-gray-400 lg:mx-auto">
                         Enti e persone che hanno permesso alla realizzazione del progetto
                     </p>
                 </div>
@@ -61,7 +61,7 @@ export default {
                         </dt>
                         <dd class="mt-2 ml-16 text-base text-gray-500 dark:text-true-gray-400">
                             {{ feature.description }}
-                        </dd>
+                        </dd>           
                         </div>
                     </dl>
                 </div>
@@ -70,7 +70,7 @@ export default {
         <div class="w-full bg-gray-100 p-3 flex justify-between">
             <div>
                 <p class="text-sm font-base text-gray-400 dark:text-true-gray-400">
-                    © 2022 - Open Bee Tracker
+                    © 2022 - Bee Environment Monitoring
                 </p>
             </div>
             <div class="flex space-x-5">

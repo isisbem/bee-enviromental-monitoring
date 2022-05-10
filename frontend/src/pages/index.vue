@@ -10,12 +10,12 @@
       <p class="mt-5 text-base text-gray-500 sm:mt-8 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl">
         Il progetto OpenBeeTracker permette di monitorare i movimenti dell api, come entrata o uscita dall'alveare, tramite dei sensori di dimensione molto piccola posizionati su di esse
       </p>
-      <div class="mt-8 sm:flex sm:justify-center lg:justify-start w-full max-w-lg space-x-4">
+      <div class="mt-8 flex sm:justify-center lg:justify-start w-full max-w-lg sm:space-x-4">
           <!-- <a href="./info" class="cursor-help w-full transition duration-100 flex items-center justify-center px-8 py-3 border border-transparent rounded-md text-gray-100 bg-black hover:bg-yellow-500 md:py-4 md:text-lg md:px-10 dark:bg-yellow-500 dark:text-black dark:hover:bg-black dark:hover:text-white">
             Informazioni dettagliate
           </a> -->
-        <router-link to="/info" class="w-full transition-colors focus:outline-none text-white bg-bee hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-200 font-medium rounded-lg text-lg px-6 py-4 mr-2 mb-2">Informazioni dettagliate</router-link>
-        <router-link to="/graph" class="w-full transition-colors focus:outline-none text-white bg-bee hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-200 font-medium rounded-lg text-lg px-6 py-4 mr-2 mb-2">Graficazione dati</router-link>
+        <router-link to="/info" class="w-full transition-colors focus:outline-none text-white bg-bee hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-200 font-medium rounded-lg text-lg px-6 py-4 mr-2 mb-2 ">Informazioni dettagliate</router-link>
+        <router-link to="/graph" class="w-full transition-colors focus:outline-none text-white bg-bee hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-200 font-medium rounded-lg text-lg px-6 py-4 mr-2 mb-2 ">Graficazione dati</router-link>
       </div>
     </div>
     <div class="h-px bg-gray-200 w-full mt-10"></div>
