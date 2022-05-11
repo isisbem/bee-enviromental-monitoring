@@ -3,7 +3,7 @@
     <div class="mt-5 sm:flex flex-col justify-center items-center text-center flex-grow mx-auto font-serif">  
       <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title my-3">Chi siamo?</p>
       <div class="mx-5 border border-yellow-400 border-4 border-double">
-        <img src="../assets/images/fotogruppo.JPG" class="h-max w-max" >
+        <img src="../assets/images/fotogruppo.png" class="h-max w-max" >
       </div>
       <div class="mt-10 mb-20 p-5 md:container border-1 border-black rounded-lg dark:border-white">
         <p class="text-center text-gray-700  dark:text-white">
