@@ -27,152 +27,28 @@
         </div>
     </div> -->
     </div>
-    <div>
-      <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title mb-5">Il team di lavoro</p>
-      <div class="grid grid-cols-1 space-y-44 mb-40">
-        <div class="flex flex-row mx-auto space-x-10 "> 
-        <div class="flip-box">
-          <div class="flip-box-inner relative">
-            <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
-            </div>
-            <div class="flip-box-back text-align-center">
-              <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Iorio Antonio</h2>
-              <p class="text-color-black bg-white dark:text-white">Lorem ipsum dolor sit </p>
-            </div>
+    <div class="bg-white">
+    <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+      <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title">Team</p>
+
+      <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+        <div v-for="product in products" :key="product.id" class="group relative">
+          <div class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-80 lg:h-80 lg:aspect-none">
+            <img :src="product.imageSrc" class="w-full h-full object-center object-cover lg:w-full lg:h-full" />
           </div>
-        </div>
-        <div class="flip-box">
-          <div class="flip-box-inner relative">
-            <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
-            </div>
-            <div class="flip-box-back text-align-center">
-              <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Utente</h2>
-              <p class="text-color-black bg-white dark:text-white">Lorem ipsum dolor sit </p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-box">
-          <div class="flip-box-inner relative">
-            <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
-            </div>
-            <div class="flip-box-back text-align-center">
-              <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Utente</h2>
-              <p class="text-color-black bg-white dark:text-white">Lorem ipsum dolor sit </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-row mx-auto space-x-10 "> 
-        <div class="flip-box">
-          <div class="flip-box-inner relative">
-            <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
-            </div>
-            <div class="flip-box-back text-align-center">
-              <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Iorio Antonio</h2>
-              <p class="text-color-black bg-white dark:text-white">Lorem ipsum dolor sit </p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-box">
-          <div class="flip-box-inner relative">
-            <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
-            </div>
-            <div class="flip-box-back text-align-center">
-              <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Utente</h2>
-              <p class="text-color-black bg-white dark:text-white">Lorem ipsum dolor sit </p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-box">
-          <div class="flip-box-inner relative">
-            <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
-            </div>
-            <div class="flip-box-back text-align-center">
-              <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Utente</h2>
-              <p class="text-color-black bg-white dark:text-white">Lorem ipsum dolor sit </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-row mx-auto space-x-10 "> 
-        <div class="flip-box">
-          <div class="flip-box-inner relative">
-            <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
-            </div>
-            <div class="flip-box-back text-align-center">
-              <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Iorio Antonio</h2>
-              <p class="text-color-black bg-white dark:text-white">Lorem ipsum dolor sit </p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-box">
-          <div class="flip-box-inner relative">
-            <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
-            </div>
-            <div class="flip-box-back text-align-center">
-              <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Utente</h2>
-              <p class="text-color-black bg-white dark:text-white">Lorem ipsum dolor sit </p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-box">
-          <div class="flip-box-inner relative">
-            <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
-            </div>
-            <div class="flip-box-back text-align-center">
-              <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Utente</h2>
-              <p class="text-color-black bg-white dark:text-white">Lorem ipsum dolor sit </p>
-            </div>
-          </div>
-        </div>
-        </div>
-      <div class="flex flex-row mx-auto space-x-10 "> 
-        <div class="flip-box">
-          <div class="flip-box-inner relative">
-            <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
-            </div>
-            <div class="flip-box-back text-align-center">
-              <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Iorio Antonio</h2>
-              <p class="text-color-black bg-white dark:text-white">Lorem ipsum dolor sit </p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-box">
-          <div class="flip-box-inner relative">
-            <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
-            </div>
-            <div class="flip-box-back text-align-center">
-              <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Utente</h2>
-              <p class="text-color-black bg-white dark:text-white">Lorem ipsum dolor sit </p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-box">
-          <div class="flip-box-inner relative">
-            <div class="flip-box-front absolute w-50 h-50">
-              <img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg">
-            </div>
-            <div class="flip-box-back text-align-center">
-              <h2 class="text-color-black bg-white dark:text-white justify-center text-center">Utente</h2>
-              <p class="text-color-black bg-white dark:text-white">Lorem ipsum dolor sit </p>
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                  <span aria-hidden="true" class="absolute inset-0" />
+                  {{ product.name }}
+              </h3>
+              <p class="mt-1 text-sm text-gray-500">{{ product.color }}</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
-    <div class="flex flex-row"></div>
+  </div>
     <div class="grid grid-rows-3"> 
       <div class="container">
         <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title">Dove siamo?</p>
@@ -182,13 +58,81 @@
         <p class="mt-5 mx-10 text-lg text-center text-gray-500 dark:text-true-gray-400">Ecco alcune immagini all'arnia didattica</p>
       </div>
     </div>
+    <!--
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+-->
+  
 <!--<div v-for="(i) in immagini">
       <img :src="immagini[1].src" class="h-50 w-50 img-fluid" :key="i" />
     </div>-->  
   </main>
 </template>
 
-
+<script setup>
+const products = [
+  {
+    id: 1,
+    name: 'Antonio Iorio',
+    imageSrc: '../../public/immagine-about-prova.jpeg',
+    color: 'Web developer',
+  },
+  {
+    id: 2,
+    name: 'Federico Scapati',
+    imageSrc: '../../public/people/scap.JPG',
+    color: 'Un po de que, un po de quello là',
+  },
+  {
+    id: 3,
+    name: 'Alberto Pocar',
+    imageSrc: '../../public/people/beto.JPG',
+    color: 'Team Creativo',
+  },
+  {
+    id: 4,
+    name: 'Alessio Sanda',
+    imageSrc: '../../public/people/ale.JPG',
+    color: 'Team Creativo',
+  },
+  {
+    id: 1,
+    name: 'Cristian Radev',
+    imageSrc: '../../public/people/cristian.JPG',
+    color: 'Team Sviluppo',
+  },
+  {
+    id: 2,
+    name: 'Antonio Iorio',
+    imageSrc: '../../public/people/io.JPG',
+    color: 'Web developer',
+  },
+  {
+    id: 3,
+    name: 'Antonio Iorio',
+    imageSrc: '../../public/immagine-about-prova.jpeg',
+    color: 'Web developer',
+  },
+  {
+    id: 4,
+    name: 'Antonio Iorio',
+    imageSrc: '../../public/immagine-about-prova.jpeg',
+    color: 'Web developer',
+  },
+]
+</script>
 <script>
 
 
