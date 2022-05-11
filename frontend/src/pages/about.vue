@@ -172,6 +172,7 @@
       </div>
     </div>
     </div>
+    <div class="flex flex-row"></div>
     <div class="grid grid-rows-3"> 
       <div class="container">
         <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title">Dove siamo?</p>

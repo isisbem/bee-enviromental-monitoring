@@ -15,6 +15,10 @@ const links = [
   {
     name: 'FAQ',
     url: '/faq'
+  },
+  {
+    name: 'Info',
+    url: '/info'
   }
 ]
 
