@@ -26,11 +26,10 @@
           <div><img class="rounded-lg" src="../assets/images/immagine-about-prova.jpeg" ></div>
         </div>
     </div> -->
-    </div>
-    <div class="bg-white">
+  </div>
+    <div class="bg-trasparent">
     <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
       <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title">Team</p>
-
       <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
         <div v-for="product in products" :key="product.id" class="group relative">
           <div class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-80 lg:h-80 lg:aspect-none">
@@ -56,8 +55,54 @@
         <iframe class="mx-auto mt-5 p-0.5 bg-bee w-full h-full" src="https://www.google.com/maps/embed?pb=!4v1649334139755!6m8!1m7!1sUw8yM8AmJdGep2ws7w__Tw!2m2!1d45.80424854558367!2d13.51056052364267!3f221.22875545248564!4f-10.714724616806095!5f1.2236759176200285" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title mt-10">Arnia Didattica</p>
         <p class="mt-5 mx-10 text-lg text-center text-gray-500 dark:text-true-gray-400">Ecco alcune immagini all'arnia didattica</p>
+        <!--
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+-->
+      <!--
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+-->
+  <div class="bg-white">
+    <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+      <h2 class="sr-only">Products</h2>
+
+      <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+        <a v-for="index in arnia" :key="index.id" class="group">
+          <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 border border-gray-700 m-2 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+            <img :src="index.imageSrc" :alt="index.imageAlt" class="w-full h-full object-center object-cover group-hover:opacity-75" />
+          </div>
+        </a>
       </div>
     </div>
+  </div>
+  </div>
+</div>
+
     <!--
   This example requires Tailwind CSS v2.0+ 
   
@@ -86,71 +131,81 @@ const products = [
   {
     id: 1,
     name: 'Antonio Iorio',
-    imageSrc: '../../public/immagine-about-prova.jpeg',
+    imageSrc: 'people/io.JPG',
     color: 'Web developer',
   },
   {
     id: 2,
     name: 'Federico Scapati',
-    imageSrc: '../../public/people/scap.JPG',
+    imageSrc: 'people/scap.JPG',
     color: 'Un po de que, un po de quello là',
   },
   {
     id: 3,
     name: 'Alberto Pocar',
-    imageSrc: '../../public/people/beto.JPG',
+    imageSrc: 'people/beto.JPG',
     color: 'Team Creativo',
   },
   {
     id: 4,
     name: 'Alessio Sanda',
-    imageSrc: '../../public/people/ale.JPG',
+    imageSrc: 'people/ale.JPG',
     color: 'Team Creativo',
   },
   {
     id: 1,
     name: 'Cristian Radev',
-    imageSrc: '../../public/people/cristian.JPG',
+    imageSrc: 'people/cristian.JPG',
     color: 'Team Sviluppo',
   },
   {
     id: 2,
     name: 'Antonio Iorio',
-    imageSrc: '../../public/people/io.JPG',
+    imageSrc: 'people/io.JPG',
     color: 'Web developer',
   },
   {
     id: 3,
     name: 'Antonio Iorio',
-    imageSrc: '../../public/immagine-about-prova.jpeg',
+    imageSrc: 'immagine-about-prova.jpeg',
     color: 'Web developer',
   },
   {
     id: 4,
     name: 'Antonio Iorio',
-    imageSrc: '../../public/immagine-about-prova.jpeg',
+    imageSrc: 'immagine-about-prova.jpeg',
     color: 'Web developer',
   },
+];
+
+const arnia = [
+  {
+    imageSrc: 'arnia/entrata.JPG',
+  },
+  {
+    imageSrc: 'arnia/arnea/arnea1.JPG',
+  },
+  {
+    imageSrc: 'arnia/arnea/arnea2.JPG',
+  },
+  {
+    imageSrc: 'arnia/arnea/a3.JPG',
+  },
+  {
+    imageSrc: 'arnia/arnea/a4.JPG',
+  },
+  {
+    imageSrc: 'arnia/arnea/a5.JPG',
+  },
+  {
+    imageSrc: 'arnia/arnea/a6.JPG',
+  },
+  {
+    imageSrc: 'arnia/arnea/a7.JPG',
+  },
 ]
 </script>
-<script>
 
-
-  const immagini = [
-  {
-    name: '1',
-    src: '../assets/images/coso,jpeg'
-  },
-  {
-    name: '2',
-    src: ''
-  },
-  {
-    name: '3',
-    src: ''
-  },
-]
-</script>
 <style>
 
 .flip-box-inner {
