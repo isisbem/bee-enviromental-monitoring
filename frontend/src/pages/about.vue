@@ -48,13 +48,13 @@
       </div>
     </div>
   </div>
-    <div class="grid grid-rows-3"> 
+    <div class="grid grid-rows-2"> 
       <div class="container">
         <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title">Dove siamo?</p>
-        <p class="mt-5 mx-10 text-lg text-center text-gray-500 dark:text-true-gray-400">La nostra arnea di sperimentazione si trova nell' <a class="underline hover:no-underline text-black" href="https://bem.goiss.edu.it/" target="_blank">I.S.I.S. BEM</a> (sede Staranzano). Questa è posta nel giardino del retro della scuola. Qua sotto si può trovare una mappa esplorabile posta all'entrata principale.</p>
+        <p class="mt-5 mx-10 text-lg text-center text-gray-500 dark:text-true-gray-400">La nostra arnia di sperimentazione si trova nell' <a class="underline hover:no-underline text-black" href="https://bem.goiss.edu.it/" target="_blank">I.S.I.S. BEM</a> (sede Staranzano). Questa è posta nel giardino del retro della scuola. Qua sotto si può trovare una mappa esplorabile posta all'entrata principale.</p>
         <iframe class="mx-auto mt-5 p-0.5 bg-bee w-full h-full" src="https://www.google.com/maps/embed?pb=!4v1649334139755!6m8!1m7!1sUw8yM8AmJdGep2ws7w__Tw!2m2!1d45.80424854558367!2d13.51056052364267!3f221.22875545248564!4f-10.714724616806095!5f1.2236759176200285" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title mt-10">Arnia Didattica</p>
-        <p class="mt-5 mx-10 text-lg text-center text-gray-500 dark:text-true-gray-400">Ecco alcune immagini all'arnia didattica</p>
+        <p class="mt-5 mx-10 text-lg text-center text-gray-500 dark:text-true-gray-400">Ecco alcune immagini della nostra arnia didattica e api che ospita</p>
         <!--
   This example requires Tailwind CSS v2.0+ 
   
@@ -89,11 +89,9 @@
 -->
   <div class="bg-white">
     <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-      <h2 class="sr-only">Products</h2>
-
-      <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+      <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 gap-x-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
         <a v-for="index in arnia" :key="index.id" class="group">
-          <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 border border-gray-700 m-2 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+          <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 border border-yellow-300 border-2 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
             <img :src="index.imageSrc" :alt="index.imageAlt" class="w-full h-full object-center object-cover group-hover:opacity-75" />
           </div>
         </a>
@@ -102,29 +100,96 @@
   </div>
   </div>
 </div>
-
-    <!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
--->
-  
-<!--<div v-for="(i) in immagini">
-      <img :src="immagini[1].src" class="h-50 w-50 img-fluid" :key="i" />
-    </div>-->  
-  </main>
+<div class="container">
+  <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title">Come abbiamo lavorato?</p>
+  <p class="mt-5 mx-10 text-lg text-center text-gray-500 dark:text-true-gray-400">Abbiamo iniziato con Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae vero illum nam consequatur mollitia, ipsam, autem odit dignissimos animi non nemo, omnis sunt nihil ipsa. Aliquid asperiores nihil harum hic?</p>
+</div>
+</main>
 </template>
+
+<style>
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+.carousel-container {
+  width: 1280px;
+  margin: 50px auto;
+  min-height: 200px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .carousel-container {
+    width: 85%;
+  }
+}
+.carousel-container .carousel-inner {
+  overflow: hidden;
+}
+.carousel-container .track {
+  display: inline-flex;
+  transition: transform 0.5s;
+}
+.carousel-container .card-container {
+  width: 259px;
+  flex-shrink: 0;
+  height: 250px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+.carousel-container .card-container .card {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.nav button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.nav .prev {
+  left: -30px;
+  display: none;
+}
+.nav .prev.show {
+  display: block;
+}
+.nav .next {
+  right: -30px;
+}
+.nav .next.hide {
+  display: none;
+}
+
+.card > * {
+  flex: 1;
+}
+.card .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.card .info {
+  flex-basis: 40px;
+  background: #333;
+  color: #fff;
+  flex-grow: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+</style>
 
 <script setup>
 const products = [
@@ -203,28 +268,35 @@ const arnia = [
   {
     imageSrc: 'arnia/arnea/a7.JPG',
   },
-]
+  {
+    imageSrc: 'arnia/fumo.JPG',
+  },
+  {
+    imageSrc: 'arnia/api/api2.JPG',
+  },
+  {
+    imageSrc: 'arnia/api/api3.JPG',
+  },
+  {
+    imageSrc: 'arnia/api/api4.JPG',
+  },
+  {
+    imageSrc: 'arnia/api/api5.JPG',
+  },
+  {
+    imageSrc: 'arnia/api/api6.JPG',
+  },
+  {
+    imageSrc: 'arnia/api/api7.JPG',
+  },
+  {
+    imageSrc: 'arnia/api/api8.JPG',
+  },
+  {
+    imageSrc: 'arnia/api/ape1.jpeg',
+  }
+  
+];
+
 </script>
-
-<style>
-
-.flip-box-inner {
-  transition: transform 0.7s;
-  transform-style: preserve-3d;
-}
-
-.flip-box:active .flip-box-inner{
-  transform: rotateY(180deg);
-}
-
-.flip-box-front, .flip-box-back {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-box-back {
-  transform: rotateY(180deg);
-  background-color: rgb(224, 224, 224);
-}
-</style>
 
