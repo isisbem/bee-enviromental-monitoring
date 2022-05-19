@@ -70,7 +70,7 @@
         <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title">Come abbiamo lavorato?</p>
         <p class="mt-10 mb-10 mx-auto text-lg text-center text-gray-500 dark:text-true-gray-400">Inizialmente abbiamo pensato al come far entrare le api dentro l'arnia in modo che vengano controllate dai due sensori e dai relativi RFID. Dopo questo ragionamento abbiamo creato un entrata peronalizzata:</p>
         <div class="mb-10">
-          <img class="mx-auto h-auto w-80 rounded-lg mx-auto border border-yellow-500 border-opacity-75 border-2 p-1" src="/arnia/entrata.JPG">
+          <img class="mx-auto h-auto w-80 rounded-lg mx-auto border border-yellow-500 border-opacity-75 border-2 p-1" src="../assets/images/entrata.JPG">
         </div>
         <p class="mb-10 mx-auto text-lg text-center text-gray-500 dark:text-true-gray-400">All'interno di questa struttura di legno costruita interamente a mano, sono stati inseriti i due sensori (negli appositi spazi posti lateralmente visualizzabili nella figura sopra) in modo da rilevare l'eventuale passaggio dell'ape e stabilirne la direzione</p>
         <div class="mb-10 rounded-lg">
