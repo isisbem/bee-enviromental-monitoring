@@ -147,10 +147,18 @@ export default {
       <img class="mx-auto my-5" src="../assets/images/ape-main.svg"> 
       <div class="text-center">
         <a href="\file\ape.fprg" download="BeeFlowChart.fprg">
-          <button class="transition-colors focus:outline-none text-white bg-bee hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-200 font-medium rounded-lg text-lg px-10 py-5 mr-2 mb-2 mt-5">Scarica qua il FlowChart (FPRG)</button>
+          <button class="transition-colors focus:outline-none text-white bg-bee hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-200 font-medium rounded-lg text-lg px-10 py-5 mr-2 mb-2 mt-5">Scarica qua il FlowChart (FPRG)
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill mx-auto mt-2" viewBox="0 0 16 16">
+              <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"/>
+            </svg>
+          </button>
         </a>
         <a href="\file\apechart.png" download="BeeFlowChart.png">
-          <button class="transition-colors focus:outline-none text-white bg-bee hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-200 font-medium rounded-lg text-lg px-10 py-5 mr-2 mb-2 mt-5">Scarica qua il FlowChart (PNG)</button>
+          <button class="transition-colors focus:outline-none text-white bg-bee hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-200 font-medium rounded-lg text-lg px-10 py-5 mr-2 mb-2 mt-5">Scarica qua il FlowChart (PNG)
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill mx-auto mt-2" viewBox="0 0 16 16">
+              <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"/>
+            </svg>
+          </button>
         </a>
       </div>
     </div>

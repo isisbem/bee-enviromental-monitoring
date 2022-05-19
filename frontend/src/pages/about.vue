@@ -5,7 +5,7 @@
       <div class="mx-5 border border-yellow-400 border-4 border-double">
         <img src="../assets/images/fotogruppo.png" class="h-max w-max" >
       </div>
-      <div class="mt-10 mb-20 p-5 md:container border-1 border-black rounded-lg dark:border-white">
+      <div class="mt-10 mb-5 p-5 md:container border-1 border-black rounded-lg dark:border-white">
         <p class="text-center text-gray-700  dark:text-white">
           Vi state chiedendo chi siamo, <b>bene</b>! Noi siamo una classe quarta dell'istituto tecnico 
           Guglielmo Marconi, di Staranzano. Ci è stato affidato il compito di gestire
@@ -28,27 +28,27 @@
     </div> -->
   </div>
     <div class="bg-trasparent">
-    <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-      <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title">Team</p>
-      <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-        <div v-for="product in products" :key="product.id" class="group relative">
-          <div class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-80 lg:h-80 lg:aspect-none">
-            <img :src="product.imageSrc" class="w-full h-full object-center object-cover lg:w-full lg:h-full" />
-          </div>
-          <div class="mt-4 flex justify-between">
-            <div>
-              <h3 class="text-sm text-gray-700">
-                  <span aria-hidden="true" class="absolute inset-0" />
-                  {{ product.name }}
-              </h3>
-              <p class="mt-1 text-sm text-gray-500">{{ product.color }}</p>
+      <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title">Team</p>
+        <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+          <div v-for="product in products" :key="product.id" class="group relative">
+            <div class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-80 lg:h-80 lg:aspect-none">
+              <img :src="product.imageSrc" class="w-full h-full object-center object-cover lg:w-full lg:h-full" />
+            </div>
+            <div class="mt-4 flex justify-between">
+              <div>
+                <h3 class="text-sm text-gray-700">
+                    <span aria-hidden="true" class="absolute inset-0" />
+                    {{ product.name }}
+                </h3>
+                <p class="mt-1 text-sm text-gray-500">{{ product.color }}</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-    <div class="grid grid-rows-2"> 
+    <div class="mb-5"> 
       <div class="container">
         <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title">Dove siamo?</p>
         <p class="mt-5 mx-10 text-lg text-center text-gray-500 dark:text-true-gray-400">La nostra arnia di sperimentazione si trova nell' <a class="underline hover:no-underline text-black" href="https://bem.goiss.edu.it/" target="_blank">I.S.I.S. BEM</a> (sede Staranzano). Questa è posta nel giardino del retro della scuola. Qua sotto si può trovare una mappa esplorabile posta all'entrata principale.</p>
@@ -56,61 +56,38 @@
           <iframe class="mt-5 p-0.5 bg-bee w-full h-full" src="https://www.google.com/maps/embed?pb=!4v1649334139755!6m8!1m7!1sUw8yM8AmJdGep2ws7w__Tw!2m2!1d45.80424854558367!2d13.51056052364267!3f221.22875545248564!4f-10.714724616806095!5f1.2236759176200285" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title mt-10">Arnia Didattica</p>
-        <p class="mt-5 mx-10 text-lg text-center text-gray-500 dark:text-true-gray-400">Ecco alcune immagini della nostra arnia didattica e api che ospita</p>
-        <!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
--->
-      <!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
--->
-  <div class="bg-white">
-    <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-      <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 gap-x-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-        <a v-for="index in arnia" :key="index.id" class="group">
-          <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 border border-yellow-300 border-2 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-            <img :src="index.imageSrc" :alt="index.imageAlt" class="w-full h-full object-center object-cover group-hover:opacity-75" />
+        <p class="mt-5 mx-10 text-lg text-center text-gray-500 dark:text-true-gray-400">Ecco alcune immagini della nostra arnia didattica e api che ospita</p>        <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+          <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 gap-x-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+            <a v-for="index in arnia" :key="index.id" class="group">
+              <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 border border-yellow-300 border-2 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+                <img :src="index.imageSrc" :alt="index.imageAlt" class="w-full h-full object-center object-cover group-hover:opacity-75" />
+              </div>
+            </a>
           </div>
-        </a>
+        </div>
+      </div>
+      <div class="container ">
+        <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title">Come abbiamo lavorato?</p>
+        <p class="mt-10 mb-10 mx-auto text-lg text-center text-gray-500 dark:text-true-gray-400">Inizialmente abbiamo pensato al come far entrare le api dentro l'arnia in modo che vengano controllate dai due sensori e dai relativi RFID. Dopo questo ragionamento abbiamo creato un entrata peronalizzata:</p>
+        <div class="mb-10 border rounded-lg border-yellow-500 border-opacity-75 border-2 p-1">
+          <img class="rounded-lg" src="/arnia/entrata.JPG">
+        </div>
+        <p class="mb-10 mx-auto text-lg text-center text-gray-500 dark:text-true-gray-400">All'interno di questa struttura di legno costruita interamente a mano, sono stati inseriti i due sensori (negli appositi spazi posti lateralmente visualizzabili nella figura sopra) in modo da rilevare l'eventuale passaggio dell'ape e stabilirne la direzione</p>
+        <div class="mb-10 rounded-lg">
+          <img class="rounded-lg mx-auto border border-yellow-500 border-opacity-75 border-2 p-1" src="../assets/images/sensore.jpg">
+        </div>
+        <p class="mb-10 mx-auto text-lg text-center text-gray-500 dark:text-true-gray-400">Dopo aver alloggiato i sensori all'entrata dell'alveare, ci siamo posti il problema dei sensori RFID che verranno rilevati. Questi infatti sono talmente tanto piccoli da essere difficili da vedere ad occhio nudo. Ogni sensore corrisponde ad un codice univoco che lo identifica. Tramite il suo ID riusciamo a verificare quale ape è entrata/uscita dall'arnia. <br>Qui sotto si può notare il confronto fra la punta di una penna a sfera ed ll sensore RFID utilizzato posto sulle api:</p>
+        <div class="mb-10 rounded-lg">
+          <img class="rounded-lg mx-auto border border-yellow-500 border-opacity-75 border-2 p-1" src="../assets/images/sensore ape.jpg">
+        </div>
+         <p class="mb-10 mx-auto text-lg text-center text-gray-500 dark:text-true-gray-400">Per questo progetto ci siamo anche dovuti sporcare le mani per far sì che arrivasse l'energia ai sensori ed a tutto il circuito in generale. Per fare ciò ci siamo armati di pale e strumentazioni varie da giardinaggio e ci siamo rimboccati le maniche. Per far si che i collegamenti fossero al sicuro da agenti esterni abbiamo fatto passare, tramite una canaletta, i cavi sotto terra. Qui sotto è presente un time-lapse che ritrae noi mentre lavoriamo per realizzare il tunnel sotteraneo per i collegamenti:</p>
+        <video controls loop class="border border-yellow-500 border-2 border-double p-1">
+          <source src="../assets/video/timelapse.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
-  </div>
-  </div>
-</div>
-<div class="container">
-  <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title">Come abbiamo lavorato?</p>
-  <p class="mt-5 mx-10 text-lg text-center text-gray-500 dark:text-true-gray-400">Abbiamo iniziato con Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae vero illum nam consequatur mollitia, ipsam, autem odit dignissimos animi non nemo, omnis sunt nihil ipsa. Aliquid asperiores nihil harum hic?</p>
-  <video controls loop>
-    <source src="../assets/video/timelapse.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
-</main>
+  </main>
 </template>
 
 <style>
@@ -128,7 +105,6 @@
 	height: 100%;
 }
 
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 .carousel-container {
   width: 1280px;
   margin: 50px auto;
