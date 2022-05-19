@@ -52,7 +52,9 @@
       <div class="container">
         <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title">Dove siamo?</p>
         <p class="mt-5 mx-10 text-lg text-center text-gray-500 dark:text-true-gray-400">La nostra arnia di sperimentazione si trova nell' <a class="underline hover:no-underline text-black" href="https://bem.goiss.edu.it/" target="_blank">I.S.I.S. BEM</a> (sede Staranzano). Questa è posta nel giardino del retro della scuola. Qua sotto si può trovare una mappa esplorabile posta all'entrata principale.</p>
-        <iframe class="ml-5 mr-5 mt-5 p-0.5 bg-bee w-full h-full" src="https://www.google.com/maps/embed?pb=!4v1649334139755!6m8!1m7!1sUw8yM8AmJdGep2ws7w__Tw!2m2!1d45.80424854558367!2d13.51056052364267!3f221.22875545248564!4f-10.714724616806095!5f1.2236759176200285" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="videoWrapper">
+          <iframe class="mt-5 p-0.5 bg-bee w-full h-full" src="https://www.google.com/maps/embed?pb=!4v1649334139755!6m8!1m7!1sUw8yM8AmJdGep2ws7w__Tw!2m2!1d45.80424854558367!2d13.51056052364267!3f221.22875545248564!4f-10.714724616806095!5f1.2236759176200285" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title mt-10">Arnia Didattica</p>
         <p class="mt-5 mx-10 text-lg text-center text-gray-500 dark:text-true-gray-400">Ecco alcune immagini della nostra arnia didattica e api che ospita</p>
         <!--
@@ -103,12 +105,29 @@
 <div class="container">
   <p class="text-center text-bee font-semibold tracking-wide uppercase text-3xl font-title">Come abbiamo lavorato?</p>
   <p class="mt-5 mx-10 text-lg text-center text-gray-500 dark:text-true-gray-400">Abbiamo iniziato con Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae vero illum nam consequatur mollitia, ipsam, autem odit dignissimos animi non nemo, omnis sunt nihil ipsa. Aliquid asperiores nihil harum hic?</p>
-
+  <video controls loop>
+    <source src="../assets/video/timelapse.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </div>
 </main>
 </template>
 
 <style>
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 .carousel-container {
   width: 1280px;
