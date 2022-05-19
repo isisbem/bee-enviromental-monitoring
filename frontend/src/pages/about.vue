@@ -78,7 +78,7 @@
         </div>
         <p class="mb-10 mx-auto text-lg text-center text-gray-500 dark:text-true-gray-400">Dopo aver alloggiato i sensori all'entrata dell'alveare, ci siamo posti il problema dei sensori RFID che verranno rilevati. Questi infatti sono talmente tanto piccoli da essere difficili da vedere ad occhio nudo. Ogni sensore corrisponde ad un codice univoco che lo identifica. Tramite il suo ID riusciamo a verificare quale ape è entrata/uscita dall'arnia. <br>Qui sotto si può notare il confronto fra la punta di una penna a sfera ed ll sensore RFID utilizzato posto sulle api:</p>
         <div class="mb-10 rounded-lg">
-          <img class="rounded-lg mx-auto border border-yellow-500 border-opacity-75 border-2 p-1" src="../assets/images/sensore ape.jpg">
+          <img class="rounded-lg mx-auto border border-yellow-500 border-opacity-75 border-2 p-1" src="../assets/images/sensore-ape.jpg">
         </div>
          <p class="mb-10 mx-auto text-lg text-center text-gray-500 dark:text-true-gray-400">Per questo progetto ci siamo anche dovuti sporcare le mani per far sì che arrivasse l'energia ai sensori ed a tutto il circuito in generale. Per fare ciò ci siamo armati di pale e strumentazioni varie da giardinaggio e ci siamo rimboccati le maniche. Per far si che i collegamenti fossero al sicuro da agenti esterni abbiamo fatto passare, tramite una canaletta, i cavi sotto terra. Qui sotto è presente un time-lapse che ritrae noi mentre lavoriamo per realizzare il tunnel sotteraneo per i collegamenti:</p>
         <video controls loop class="border border-yellow-500 border-2 border-double p-1">
