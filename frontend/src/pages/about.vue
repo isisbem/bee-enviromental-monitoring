@@ -241,9 +241,6 @@ const products = [
 
 const arnia = [
   {
-    imageSrc: 'arnia/entrata.JPG',
-  },
-  {
     imageSrc: 'arnia/arnea/arnea1.JPG',
   },
   {
