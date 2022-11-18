@@ -29,7 +29,7 @@
                 />
               </DisclosureButton>
               <DisclosurePanel class="px-4 pt-4 pb-2 text-sm text-black">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque nulla non soluta porro iusto, eos ea blanditiis qui reprehenderit incidunt minus enim distinctio fuga ipsa accusantium quis odio odit sapiente!
+                Come attaccate il tag al dorso delle api?
               </DisclosurePanel>
             </Disclosure>
             <Disclosure as="div" class="mt-2" v-slot="{ open }">
@@ -43,7 +43,7 @@
                 />
               </DisclosureButton>
               <DisclosurePanel class="px-4 pt-4 pb-2 text-sm text-black">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur mollitia voluptatem earum est voluptates corporis cum quas? Natus perspiciatis, ratione ipsa fugiat, mollitia atque cumque rem debitis temporibus quibusdam quos?
+                La colla che usate per attaccare i tag al dorso delle api danneggia la loro vita?
               </DisclosurePanel>
             </Disclosure>
             <Disclosure as="div" class="mt-2" v-slot="{ open }">
@@ -57,8 +57,7 @@
                 />
               </DisclosureButton>
               <DisclosurePanel class="px-4 pt-4 pb-2 text-sm text-black">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur mollitia voluptatem earum est voluptates corporis cum quas? Natus perspiciatis, ratione ipsa fugiat, mollitia atque cumque rem debitis temporibus quibusdam quos?
-              </DisclosurePanel>
+                Da dove è nata l'idea di questo progetto?              </DisclosurePanel>
             </Disclosure>
             <Disclosure as="div" class="mt-2" v-slot="{ open }">
               <DisclosureButton
@@ -123,4 +122,5 @@ export default {
 }
 </script>
     <!---->
+
 
