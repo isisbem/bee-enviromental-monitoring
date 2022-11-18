@@ -1,7 +1,4 @@
 name: Deploy
-defaults:
-  run:
-    working-directory: './frontend'
 on:
   push:
     branches:
@@ -9,6 +6,9 @@ on:
 jobs:
   build:
     name: Build
+    defaults:
+      run:
+        working-directory: './frontend'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -33,6 +33,9 @@ jobs:
 
   deploy:
     name: Deploy
+    defaults:
+      run:
+        working-directory: './frontend'
     needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
