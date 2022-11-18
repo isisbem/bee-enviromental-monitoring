@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-        with:
-          working-directory: frontend
 
       - name: Setup Node
         uses: actions/setup-node@v1
