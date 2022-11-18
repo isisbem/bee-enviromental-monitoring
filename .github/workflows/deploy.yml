@@ -12,17 +12,18 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
         with:
-          path: ./frontend
+          working-directory: frontend
 
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
           node-version: 18
+          working-directory: frontend
 
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
         with:
-          working-directory: ./frontend
+          working-directory: frontend
 
       - name: Build project
         run: npm run build
@@ -48,5 +49,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
+          working-directory: frontend
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./frontend/dist
