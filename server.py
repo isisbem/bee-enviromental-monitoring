@@ -14,5 +14,9 @@ def faq():
 def test():
     return render_template('test.html')
 
+@app.route('/test_graph')
+def test_graph():
+    return render_template('test_graph.html')
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
