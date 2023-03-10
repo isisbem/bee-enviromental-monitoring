@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}iPanel{% endblock %}
+
+{% block body %}
+<main>
+  <div class="space-x-5 mt-5 flex">
+    <template x-data x-for="i in 3">
+      <div class="p-5 bg-neutral-100 flex-1 border border-neutral-200 rounded-lg">
+        <h4 class="text-lg text-neutral-400">Lorem Ipsum</h4>
+        <h1 class="text-3xl font-bold">10</h1>
+      </div>
+    </template>
+  </div>
+</main>
+{% endblock %}
