@@ -1,3 +1,4 @@
+import json
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -20,6 +21,13 @@ def chi_siamo():
 @app.route('/ipanel')
 def ipanel_static():
     return render_template('ipanel/static.html')
+
+@app.route('/faq')
+def faq():
+    with open('./static/data/faq.json') as f:
+        faqs = json.load(f)
+
+    return render_template('faq.html', faqs=faqs)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
