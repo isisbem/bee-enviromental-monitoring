@@ -1,18 +1,34 @@
 [
   {
-    "title": "Ciao a tutti come possiamo?",
-    "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, ipsam deserunt. Eum laudantium asperiores blanditiis voluptatum? Minus fugit deserunt corrupti obcaecati, doloribus eos dolore aliquam. Tempore cum veritatis aperiam cupiditate?"
+    "title": "Com'è nato il progetto?",
+    "content": "Il progetto nasce dall'idea dei ragazzi della 4IA dell'anno scolastico 2021/2022 con l'aiuto degli insegnanti Massimo Lapira e Sandro Pierdomenico dell'istituto ISIS-BEM di Staranzano (GO)."
   },
   {
-    "title": "Ciao a tutti come possiamo?",
-    "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, ipsam deserunt. Eum laudantium asperiores blanditiis voluptatum? Minus fugit deserunt corrupti obcaecati, doloribus eos dolore aliquam. Tempore cum veritatis aperiam cupiditate?"
+    "title": "Di cosa tratta il progetto?",
+    "content": "BEM, acronimo che sta per Bee Environmental Monitoring, ha l'obiettivo di monitorare e raccogliere dati sulla situazione delle api. Il progetto, tramite il monitoraggio delle api presenti in una particolare arnia, ci permette di rilevare il numero e l'orario di entrate e uscite di api dall'alveare. Grazie a questi dati è possibile inoltre riuscire ad ottenere importanti informazioni sull'ambiente circostante."
   },
   {
-    "title": "Ciao a tutti come possiamo?",
-    "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, ipsam deserunt. Eum laudantium asperiores blanditiis voluptatum? Minus fugit deserunt corrupti obcaecati, doloribus eos dolore aliquam. Tempore cum veritatis aperiam cupiditate?"
+    "title": "Come funziona il progetto?",
+    "content": "Posizioniamo un tag RFID sul dorso delle api, tramite due schede RFID posizionate a poca distanza l'una dall'altra all'entrata dell'arnia, è possibile definire se un'ape è uscita o entrata."
   },
   {
-    "title": "Ciao a tutti come possiamo?",
-    "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, ipsam deserunt. Eum laudantium asperiores blanditiis voluptatum? Minus fugit deserunt corrupti obcaecati, doloribus eos dolore aliquam. Tempore cum veritatis aperiam cupiditate?"
+    "title": "Quali informazioni verranno ricavate da questo progetto?",
+    "content": "Le informazioni che verranno ricavate sono relative al ciclo vitale ed alla qualità della vita dell'ape, e del corrispettivo ambiente in cui vive."
+  },
+  {
+    "title": "Come viene posizionato il TAG?",
+    "content": "L'azione del posizionamento del tag sulle api è un'operazione delicata e fondamentale. Avviene tramite l'utilizzo di pinzette e di una colla speciale per attaccare il tag di rilevamento."
+  },
+  {
+    "title": "La colla che usate può nuocere alle api?",
+    "content": "Assolutamente no. La colla utilizzata è stata ricercata appositamente per non risultare nociva al contatto con la pelle dell'ape."
+  },
+  {
+    "title": "Chi può utilizzare il progetto?",
+    "content": "Questo progetto sarà aperto il pubblico e potrà aiutare gli interessati a monitorare la vita degli insetti attraverso i sistemi che abbiamo sviluppato."
+  },
+  {
+    "title": "Chi sono i nostri partner?",
+    "content": "I nostri partner del progetto sono Beeing ed Eurotek, che ci hanno fornito rispettivamente l’arnia didattica per l’osservazione delle api ed i sensori per il monitoraggio delle api."
   }
 ]

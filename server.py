@@ -1,3 +1,4 @@
+import io
 import json
 from flask import Flask, render_template
 
@@ -6,11 +7,6 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html')
-
-
-@app.route('/contatti')
-def contatti():
-    return render_template('contatti.html')
 
 
 @app.route('/chi_siamo')
@@ -24,7 +20,7 @@ def ipanel_static():
 
 @app.route('/faq')
 def faq():
-    with open('./static/data/faq.json') as f:
+    with io.open('./static/data/faq.json', 'r', encoding='utf-8') as f:
         faqs = json.load(f)
 
     return render_template('faq.html', faqs=faqs)
