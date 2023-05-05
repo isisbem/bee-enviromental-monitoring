@@ -1,7 +1,7 @@
 [
   {
     "title": "Com'è nato il progetto?",
-    "content": "Il progetto nasce dall'idea dei ragazzi della 4IA dell'anno scolastico 2021/2022 con l'aiuto degli insegnanti Massimo Lapira e Sandro Pierdomenico dell'istituto ISIS-BEM di Staranzano (GO)."
+    "content": "Il progetto è nato da una conversazione con il nostro dirigente scolastico Marco Fragiacomo e apicoltore esperto. Durante questa discussione il dirigente ci raccontò l'esigenza degli apicoltori di controllare l’andamento dell’entrata e uscita delle api dall’alveare. Durante l’incontro, ci siamo accorti che il problema che avevano gli apicoltori era risolvibile con le nostre competenze informatiche, e da qui nacque l’idea di Bee Environmental Monitoring"  
   },
   {
     "title": "Di cosa tratta il progetto?",
@@ -24,11 +24,23 @@
     "content": "Assolutamente no. La colla utilizzata è stata ricercata appositamente per non risultare nociva al contatto con la pelle dell'ape."
   },
   {
-    "title": "Chi può utilizzare il progetto?",
+    "title": "Questo progetto sarà pubblico o privato?",
     "content": "Questo progetto sarà aperto il pubblico e potrà aiutare gli interessati a monitorare la vita degli insetti attraverso i sistemi che abbiamo sviluppato."
   },
   {
     "title": "Chi sono i nostri partner?",
     "content": "I nostri partner del progetto sono Beeing ed Eurotek, che ci hanno fornito rispettivamente l’arnia didattica per l’osservazione delle api ed i sensori per il monitoraggio delle api."
+  },
+  {
+    "title": "Cosa sono i tag RFID e i sensori?",
+    "content": "La tecnologia RFID (Radio Frequency IDentification) si basa su frequenze radio per l'identificazione e/o la memorizzazione automatica di dati relativi a oggetti o animali, nel nostro caso le api.Questa tecnica viene applicata nel progetto grazie ad alcuni  sensori posizionati sul dorso delle api e ad antenne posizionate all'ingresso dell'alveare che ricevono l’ID del sensore associato all’insetto, registrando data e ora di ingressi e uscite."
+  },
+  {
+    "title": "Come potrà essere utile nel mondo di oggi?",
+    "content": "Potrà fornire utili informazioni sulle api e sull’ambiente i cui vivono, questo ci permettere di agire tempestivamente in caso di calo di qualità della vita delle api o possibili contaminazioni dell’ambiente"
+  },
+  {
+    "title": "Qual è la vostra previsione per il futuro del progetto?",
+    "content": "La previsione per il futuro del progetto è quella di poter presentare il nostro progetto ad enti specializzate nel settore, sia ambientale che vegetale, ma anche a veri e propri agricoltori."
   }
 ]
