@@ -1,11 +1,1 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./templates/**/*.html",
-    "./static/src/**/*.js"
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+// file vuoto per attivare l'estensione di vscode
