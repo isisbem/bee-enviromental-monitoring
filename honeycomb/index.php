@@ -1,5 +1,6 @@
 <?php
 require_once '../utils/base.php';
+require_once '../utils/database.php';
 ?>
 
 <head>
@@ -209,6 +210,24 @@ require_once '../utils/base.php';
         </div>
       </template>
     </div>-->
+  <?php
+    $sql =  "SELECT COUNT(id) FROM eventi WHERE eventoTipo = 'O' LIMIT 10";
+    
+    $result = mysqli_query($conn, $sql);
+
+    $entrate = mysqli_fetch_assoc($result);
+    
+    $sql =  "SELECT COUNT(id) FROM eventi WHERE eventoTipo = 'O' LIMIT 10";
+    
+    $result = mysqli_query($conn, $sql);
+    $uscite = mysqli_fetch_assoc($result);
+
+    $dato1 = str_replace('"', ' ', array_values($entrate)[0]);
+    $dato2 = str_replace('"', ' ', array_values($uscite)[0]);
+
+    $data = [$dato1, $dato2];
+  ?>
+
     <script>
       var optionsPie = {
         chart: {
@@ -216,11 +235,11 @@ require_once '../utils/base.php';
         },
         plotOptions: {
           pie: {
-            customScale: 0.5 
+            customScale: 1 
           }
         },
-        series: [44, 55, 13, 33],
-        labels: ['Apple', 'Mango', 'Orange', 'Watermelon']
+        series: <?php echo str_replace('"', ' ', json_encode($data)) ?>,
+        labels: ['Api all\'interno', 'Api all\'esterno']
       }
       var optionsRadar = {
         chart: {
