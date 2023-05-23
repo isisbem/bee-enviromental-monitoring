@@ -1,7 +1,6 @@
 <?php
 require_once 'utils/base.php';
 ?>
-
 <body>
   <main class="bg-neutral-50 divide-y divide-neutral-200 pb-20">
     <section class="flex grow h-full items-center justify-between p-20">
