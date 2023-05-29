@@ -9,8 +9,9 @@ require_once '../utils/database.php';
 
 <body>
   <main>
+    <h1 class="text-2xl my-3 font-bold text-center hover:text-amber-400 sm:text-3xl sm:mx-auto">Grafici</h1>
     <!-- division -->
-    <div class="grid grid-cols-2 grid-rows-2 gap-2 text-center min-h-screen h-full mt-2">
+    <div class="grid grid-cols-1 grid-rows-2 gap-2 text-center min-h-screen h-full mt-2 sm:grid-cols-2">
       <div id="first" class="border-2 border-neutral-300 shadow-2xl bg-white rounded-lg"></div>
       <div id="second" class="border-2 border-neutral-300 shadow-2xl bg-white rounded-lg"></div>
       <div id="third" class="border-2 border-neutral-300 shadow-2xl bg-white rounded-lg"></div>
@@ -233,6 +234,9 @@ require_once '../utils/database.php';
         chart: {
           type: 'pie'
         },
+        title : {
+          text: 'Api all\'interno/esterno',
+        },
         plotOptions: {
           pie: {
             customScale: 1 
@@ -244,6 +248,9 @@ require_once '../utils/database.php';
       var optionsRadar = {
         chart: {
           type: 'radar'
+        },
+        title : {
+          text: 'Ciao'
         },
         fill: {
           opacity: 0.4,
@@ -264,6 +271,9 @@ require_once '../utils/database.php';
       var optionsIsto = {
         chart: {
           type: 'bar'
+        },
+        title : {
+          text: 'Ciao'
         },
         plotOptions: {
           bar: {
