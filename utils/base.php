@@ -23,11 +23,11 @@
     </script>
   </head>
   <body class="flex flex-col grow min-h-screen h-full">
-    <nav class="flex px-10 py-3.5 w-full border-b border-neutral-200 bg-white">
+    <nav class="flex sm:px-10 py-3.5 w-full border-b border-neutral-200 bg-white">
       <ul class="flex space-x-5 mx-auto text-lg font-medium">
         <li><a class="text-neutral-900 hover:text-amber-500 transition-colors duration-100" href="<?php echo str_contains($_SERVER['REQUEST_URI'], 'honeycomb') ? '../index.php' : './index.php' ?>">Home</a></li>
-        <li><a class="text-neutral-900 hover:text-amber-500 transition-colors duration-100" href="./chi-siamo.php">Chi siamo</a></li>
-        <li><a class="text-neutral-900 hover:text-amber-500 transition-colors duration-100" href="./faq.php">FAQ</a></li>
+        <li><a class="text-neutral-900 hover:text-amber-500 transition-colors duration-100" href="<?php echo str_contains($_SERVER['REQUEST_URI'], 'honeycomb') ? '../chi-siamo.php' : './chi-siamo.php' ?>">Chi siamo</a></li>
+        <li><a class="text-neutral-900 hover:text-amber-500 transition-colors duration-100" href="<?php echo str_contains($_SERVER['REQUEST_URI'], 'honeycomb') ? '../faq.php' : './faq.php' ?>">FAQ</a></li>
         <li><a class="text-neutral-900 hover:text-amber-500 transition-colors duration-100" href="./honeycomb/index.php">Honeycomb</a></li>
       </ul>
     </nav>

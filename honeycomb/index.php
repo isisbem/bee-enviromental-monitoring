@@ -1,5 +1,6 @@
 <?php
 require_once '../utils/base.php';
+require_once '../utils/database.php';
 ?>
 
 <head>
@@ -8,8 +9,9 @@ require_once '../utils/base.php';
 
 <body>
   <main>
+    <h1 class="text-2xl my-3 font-bold text-center hover:text-amber-400 sm:text-3xl sm:mx-auto">Grafici</h1>
     <!-- division -->
-    <div class="grid grid-cols-2 grid-rows-2 gap-2 text-center min-h-screen h-full mt-2">
+    <div class="grid grid-cols-1 grid-rows-2 gap-2 text-center min-h-screen h-full mt-2 sm:grid-cols-2">
       <div id="first" class="border-2 border-neutral-300 shadow-2xl bg-white rounded-lg"></div>
       <div id="second" class="border-2 border-neutral-300 shadow-2xl bg-white rounded-lg"></div>
       <div id="third" class="border-2 border-neutral-300 shadow-2xl bg-white rounded-lg"></div>
@@ -209,22 +211,46 @@ require_once '../utils/base.php';
         </div>
       </template>
     </div>-->
+  <?php
+    $sql =  "SELECT COUNT(id) FROM eventi WHERE eventoTipo = 'O' LIMIT 10";
+    
+    $result = mysqli_query($conn, $sql);
+
+    $entrate = mysqli_fetch_assoc($result);
+    
+    $sql =  "SELECT COUNT(id) FROM eventi WHERE eventoTipo = 'O' LIMIT 10";
+    
+    $result = mysqli_query($conn, $sql);
+    $uscite = mysqli_fetch_assoc($result);
+
+    $dato1 = str_replace('"', ' ', array_values($entrate)[0]);
+    $dato2 = str_replace('"', ' ', array_values($uscite)[0]);
+
+    $data = [$dato1, $dato2];
+  ?>
+
     <script>
       var optionsPie = {
         chart: {
           type: 'pie'
         },
+        title : {
+          text: 'Api all\'interno/esterno',
+        },
         plotOptions: {
           pie: {
-            customScale: 0.5 
+            customScale: 1 
           }
         },
-        series: [44, 55, 13, 33],
-        labels: ['Apple', 'Mango', 'Orange', 'Watermelon']
+        series: <?php echo str_replace('"', ' ', json_encode($data)) ?>,
+        labels: ['Api all\'interno', 'Api all\'esterno']
       }
       var optionsRadar = {
         chart: {
           type: 'radar'
+        },
+        title : {
+          text: 'Ciao'
         },
         fill: {
           opacity: 0.4,
@@ -245,6 +271,9 @@ require_once '../utils/base.php';
       var optionsIsto = {
         chart: {
           type: 'bar'
+        },
+        title : {
+          text: 'Ciao'
         },
         plotOptions: {
           bar: {
