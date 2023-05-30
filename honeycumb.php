@@ -212,6 +212,8 @@ require_once './database.php';
       </template>
     </div>-->
   <?php
+
+  //grafico a torta
     $sql =  "SELECT COUNT(id) FROM eventi WHERE eventoTipo = 'O' LIMIT 10";
     
     $result = mysqli_query($conn, $sql);
@@ -227,6 +229,39 @@ require_once './database.php';
     $dato2 = str_replace('"', ' ', array_values($uscite)[0]);
 
     $data = [$dato1, $dato2];
+
+    //grafico ad area
+    $entrate = array();
+
+
+    for($x = 0; $x < 7; $x++){
+
+      $date = date('Y-m-d',strtotime("-" .$x . " days"));
+      
+      $sqlUscita = "SELECT COUNT(id) FROM eventi WHERE eventoDateTime LIKE '" . $date . "%' AND eventoTipo = 'O'";
+      $resultUscita = mysqli_query($conn, $sqlUscita);
+      while ($row = mysqli_fetch_assoc($resultUscita)) {
+        $uscita[$date] = $row["COUNT(id)"];
+      }
+      
+      $sqlEntrata = "SELECT COUNT(id) FROM eventi WHERE eventoDateTime LIKE '" . $date . "%' AND eventoTipo = 'I'";
+      $resultEntrata = mysqli_query($conn, $sqlEntrata);
+      while ($row = mysqli_fetch_assoc($resultEntrata)) {
+        $entrata[$date] = $row["COUNT(id)"];
+      }
+    }
+    
+    $arrUscita = "";
+    for($x = 0; $x < 7; $x++){
+      $arrUscita = $arrUscita . array_values($uscita)[$x];
+    }
+    $arrUscita = strrev($arrUscita);
+
+    $arrEntrata = "";
+    for($x = 0; $x < 7; $x++){
+      $arrEntrata = $arrEntrata . array_values($entrata)[$x];
+    }
+    $arrEntrata = strrev($arrEntrata);
   ?>
 
     <script>
@@ -245,28 +280,35 @@ require_once './database.php';
         series: <?php echo str_replace('"', ' ', json_encode($data)) ?>,
         labels: ['Api all\'interno', 'Api all\'esterno']
       }
-      var optionsRadar = {
-        chart: {
-          type: 'radar'
+
+      const day = 24*60*1000*60;
+
+      var optionsArea = {
+        series: [{
+          name: 'Api in entrata',
+          data: [<?php echo $arrEntrata[0];?>, <?php echo $arrEntrata[1];?>, <?php echo $arrEntrata[2];?>, <?php echo $arrEntrata[3];?>, <?php echo $arrEntrata[4];?>, <?php echo $arrEntrata[5];?>, <?php echo $arrEntrata[6];?>]
+        }, {
+          name: 'Api in uscita',
+          data: [<?php echo $arrUscita[0];?>, <?php echo $arrUscita[1];?>, <?php echo $arrUscita[2];?>, <?php echo $arrUscita[3];?>, <?php echo $arrUscita[4];?>, <?php echo $arrUscita[5];?>, <?php echo $arrUscita[6];?>]
+        }],
+
+        chart:{
+          height: 500,
+          type: 'area'
         },
-        title : {
-          text: 'Ciao'
-        },
-        fill: {
-          opacity: 0.4,
-        },
-        series: [
-          {
-            name: "Radar Series 1",
-            data: [45, 52, 38, 24, 33, 10]
-          },
-          {
-            name: "Radar Series 2",
-            data: [26, 21, 20, 6, 8, 15]
+        title:{
+          text: 'Api in entrata/uscita per giorno', 
+        }, 
+        plotOptions: {
+          pie: {
+            customScale: 1 
           }
-        ],
-        labels: ['April', 'May', 'June', 'July', 'August', 'September']
-      }
+      },
+      xaxis: {
+          type: 'datetime',
+          categories: [Date.now()-day*6, Date.now()-day*5, Date.now()-day*4, Date.now()-day*3, Date.now()-day*2, Date.now()-day*1, Date.now()],
+        },
+      };
 
 
       const d = new Date();
@@ -335,8 +377,8 @@ require_once './database.php';
       var pie = new ApexCharts(document.getElementById('first'), optionsPie);
       pie.render();
       
-      var radar = new ApexCharts(document.getElementById('second'), optionsRadar);
-      radar.render();
+      var area = new ApexCharts(document.getElementById('second'), optionsArea);
+      area.render();
 
       var isto = new ApexCharts(document.getElementById('third'), optionsIsto);
       isto.render();
