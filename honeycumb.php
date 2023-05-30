@@ -1,6 +1,6 @@
 <?php
-require_once '../utils/base.php';
-require_once '../utils/database.php';
+require_once './base.php';
+require_once './database.php';
 ?>
 
 <head>
@@ -9,7 +9,7 @@ require_once '../utils/database.php';
 
 <body>
   <main>
-    <h1 class="text-2xl my-3 font-bold text-center hover:text-amber-400 sm:text-3xl sm:mx-auto">Grafici</h1>
+    <h1 class="text-2xl my-3 font-bold text-center text-amber-400 sm:text-3xl sm:mx-auto">Grafici</h1>
     <!-- division -->
     <div class="grid grid-cols-1 grid-rows-2 gap-2 text-center min-h-screen h-full mt-2 sm:grid-cols-2">
       <div id="first" class="border-2 border-neutral-300 shadow-2xl bg-white rounded-lg"></div>
@@ -268,36 +268,70 @@ require_once '../utils/database.php';
         labels: ['April', 'May', 'June', 'July', 'August', 'September']
       }
 
+
+      const d = new Date();
+
       var optionsIsto = {
-        chart: {
-          type: 'bar'
+          series: [{
+          name: 'ENTRATE',
+          data: [44, 55, 41, 67, 22, 43]
+        }, {
+          name: 'USCITE',
+          data: [13, 23, 20, 8, 13, 27]
+        }],
+          chart: {
+          type: 'bar',
+          stacked: true,
+          toolbar: {
+            show: true
+          },
+          zoom: {
+            enabled: true
+          },
         },
         title : {
-          text: 'Ciao'
+          text: 'Entrate/Uscite ogni ora'
         },
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            legend: {
+              position: 'bottom',
+              offsetX: -10,
+              offsetY: 0
+            }
+          }
+        }],
         plotOptions: {
           bar: {
-            distributed: true,
-            borderRadius: 15
-          }
+            horizontal: false,
+            borderRadius: 10,
+            borderRadiusApplication: 'end', // 'around', 'end'
+            borderRadiusWhenStacked: 'last', // 'all', 'last'
+            dataLabels: {
+              total: {
+                enabled: true,
+                style: {
+                  fontSize: '13px',
+                  fontWeight: 900
+                }
+              }
+            }
+          },
         },
-        series: [{
-          data: [{
-            x: 'category A',
-            y: 10
-          }, {
-            x: 'category B',
-            y: 18
-          }, {
-            x: 'category C',
-            y: 13
-          }, {
-            x: 'category D',
-            y: 18
-          },]
-        }]
-      }
-      
+        xaxis: {
+          type: 'hours',
+          categories: [(d.getHours())-5,(d.getHours())-4,(d.getHours())-3,(d.getHours())-2,
+          (d.getHours()-1),(d.getHours())],
+        },
+        legend: {
+          position: 'right',
+          offsetY: 40
+        },
+        fill: {
+          opacity: 1
+        }
+        };
       var pie = new ApexCharts(document.getElementById('first'), optionsPie);
       pie.render();
       

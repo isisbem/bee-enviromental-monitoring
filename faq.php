@@ -1,5 +1,5 @@
 <?php
-require_once 'utils/base.php';
+require_once './base.php';
 ?>
 
 <head>

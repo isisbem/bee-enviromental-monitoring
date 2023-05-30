@@ -1,5 +1,5 @@
 <?php
-require_once 'utils/base.php';
+require_once './base.php';
 ?>
 <body>
   <main class="bg-neutral-50 divide-y divide-neutral-200 pb-20">
@@ -8,12 +8,12 @@ require_once 'utils/base.php';
           <h1 class="text-center sm:text-left  font-extrabold text-amber-400 text-5xl drop-shadow-sm">Bee Enviromental Monitoring</h1>
         <h2 class="text-center sm:text-left mt-4 sm:mt-0 font-bold text-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
 
-        <button class="mx-auto sm:mx-0 text-xl !mt-8 font-medium flex items-center justify-center space-x-3 bg-amber-400 hover:bg-amber-500 transition-all duration-100 px-5 py-2 rounded-full">
+        <a href="./honeycumb.php" class="mx-auto sm:mx-0 text-xl !mt-8 font-medium flex items-center justify-center space-x-3 bg-amber-400 hover:bg-amber-500 transition-all duration-100 px-5 py-2 rounded-full">
           <span>Scopri i grafici</span>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
             <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clip-rule="evenodd" />
           </svg>
-        </button>
+        </a>
       </div>
       <div>
         <img src="./static/images/logo-ape.svg" alt="splash" class="mt-20 w-[25rem] h-[15rem] sm:mt-0 drop-shadow-xl sm:h-auto sm:w-[25rem]">
