@@ -1,8 +1,50 @@
 <?php
-require_once './base.php';
 require_once './database.php';
+
+if(isset($_GET['api'])) {
+
+  $queryO = "SELECT COUNT(*) FROM eventi WHERE eventoDateTime >= DATE_SUB(CURDATE(), INTERVAL 1 DAY)
+  AND eventoDateTime <= CURDATE()
+  AND eventoTipo = 'O';";
+
+  $queryI = "SELECT COUNT(*) FROM eventi WHERE eventoDateTime >= DATE_SUB(CURDATE(), INTERVAL 1 DAY)
+  AND eventoDateTime <= CURDATE()
+  AND eventoTipo = 'I';";
+
+  $resultI = $conn->query($queryI);
+  $resultO = $conn->query($queryO);
+
+  while($row = $resultI->fetch_assoc())
+  {
+    $apiI[] = $row;
+  }
+
+  while($row = $resultO->fetch_assoc())
+  {
+    $apiO[] = $row;
+  }
+
+  $api[] = $apiI + $apiO;
+  die(json_encode($api, JSON_PRETTY_PRINT));
+  
+}
+
+require_once './base.php';
 ?>
 
+<script>
+  async function logJSONData() {
+    const response = await fetch('<?php echo $_SERVER['PHP_SELF'] . "?api" ?>');
+    const jsonData = await response.json();
+    console.log(jsonData);
+  }
+
+  const intervalID = setInterval(logJSONData, 5000);
+
+  console.log(intervalID);
+
+
+</script>
 <head>
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </head>
@@ -11,7 +53,7 @@ require_once './database.php';
   <main>
     <h1 class="text-2xl my-3 font-bold text-center text-amber-400 sm:text-3xl sm:mx-auto">Grafici</h1>
     <!-- division -->
-    <div class="grid grid-cols-1 grid-rows-2 gap-2 text-center min-h-screen h-full mt-2 sm:grid-cols-2">
+    <div class="grid grid-cols-1 grid-api-2 gap-2 text-center min-h-screen h-full mt-2 sm:grid-cols-2">
       <div id="first" class="border-2 border-neutral-300 shadow-2xl bg-white rounded-lg"></div>
       <div id="second" class="border-2 border-neutral-300 shadow-2xl bg-white rounded-lg"></div>
       <div id="third" class="border-2 border-neutral-300 shadow-2xl bg-white rounded-lg"></div>
@@ -265,6 +307,7 @@ require_once './database.php';
   ?>
 
     <script>
+
       var optionsPie = {
         chart: {
           type: 'pie'
