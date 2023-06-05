@@ -3,12 +3,10 @@ require_once './database.php';
 
 if(isset($_GET['api'])) {
 
-  $queryO = "SELECT COUNT(*) FROM eventi WHERE eventoDateTime >= DATE_SUB(CURDATE(), INTERVAL 1 DAY)
-  AND eventoDateTime <= CURDATE()
+  $queryO = "SELECT COUNT(*) FROM eventi WHERE eventoDateTime >= DATE_SUB(CURDATE(), INTERVAL 10 DAY)
   AND eventoTipo = 'O';";
 
-  $queryI = "SELECT COUNT(*) FROM eventi WHERE eventoDateTime >= DATE_SUB(CURDATE(), INTERVAL 1 DAY)
-  AND eventoDateTime <= CURDATE()
+  $queryI = "SELECT COUNT(*) FROM eventi WHERE eventoDateTime >= DATE_SUB(CURDATE(), INTERVAL 10 DAY)
   AND eventoTipo = 'I';";
 
   $resultI = $conn->query($queryI);
@@ -24,27 +22,58 @@ if(isset($_GET['api'])) {
     $apiO[] = $row;
   }
 
-  $api[] = $apiI + $apiO;
-  die(json_encode($api, JSON_PRETTY_PRINT));
+  //grafico ad area
+  $entrate = array();
+
+
+  for($x = 0; $x < 7; $x++){
+
+    $date = date('Y-m-d',strtotime("-" .$x . " days"));
+    
+    $sqlUscita = "SELECT COUNT(id) FROM eventi WHERE eventoDateTime LIKE '" . $date . "%' AND eventoTipo = 'O'";
+    $resultUscita = mysqli_query($conn, $sqlUscita);
+    while ($row = mysqli_fetch_assoc($resultUscita)) {
+      $uscita[$date] = $row["COUNT(id)"];
+    }
+
+    
+    $sqlEntrata = "SELECT COUNT(id) FROM eventi WHERE eventoDateTime LIKE '" . $date . "%' AND eventoTipo = 'I'";
+    $resultEntrata = mysqli_query($conn, $sqlEntrata);
+    while ($row = mysqli_fetch_assoc($resultEntrata)) {
+      $entrata[$date] = $row["COUNT(id)"];
+    }
+  }
+  
+  $arrUscita = "";
+  for($x = 0; $x < 7; $x++){
+    $arrUscita = $arrUscita . array_values($uscita)[$x];
+  }
+  $arrUscita = strrev($arrUscita);
+
+  $arrEntrata = "";
+  for($x = 0; $x < 7; $x++){
+    $arrEntrata = $arrEntrata . array_values($entrata)[$x];
+  }
+  $arrEntrata = strrev($arrEntrata);
+
+
+  $output = [
+    "api_in" => $apiI,
+    "api_out" => $apiO,
+    "api_in2" => $arrEntrata,
+    "api_out2" => $arrUscita,
+  ];
+
+  // $apiInEntrata = str_split($output["api_out2"]);
+  // print_r($apiInEntrata); 
+
+  die(json_encode($output, JSON_PRETTY_PRINT));
   
 }
 
 require_once './base.php';
 ?>
 
-<script>
-  async function logJSONData() {
-    const response = await fetch('<?php echo $_SERVER['PHP_SELF'] . "?api" ?>');
-    const jsonData = await response.json();
-    console.log(jsonData);
-  }
-
-  const intervalID = setInterval(logJSONData, 5000);
-
-  console.log(intervalID);
-
-
-</script>
 <head>
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </head>
@@ -256,13 +285,13 @@ require_once './base.php';
   <?php
 
   //grafico a torta
-    $sql =  "SELECT COUNT(id) FROM eventi WHERE eventoTipo = 'O' LIMIT 10";
+    $sql =  "SELECT COUNT(id) FROM eventi WHERE eventoTipo = 'O' LIMIT 1";
     
     $result = mysqli_query($conn, $sql);
 
     $entrate = mysqli_fetch_assoc($result);
     
-    $sql =  "SELECT COUNT(id) FROM eventi WHERE eventoTipo = 'O' LIMIT 10";
+    $sql =  "SELECT COUNT(id) FROM eventi WHERE eventoTipo = 'O' LIMIT 1";
     
     $result = mysqli_query($conn, $sql);
     $uscite = mysqli_fetch_assoc($result);
@@ -270,89 +299,9 @@ require_once './base.php';
     $dato1 = str_replace('"', ' ', array_values($entrate)[0]);
     $dato2 = str_replace('"', ' ', array_values($uscite)[0]);
 
-    $data = [$dato1, $dato2];
-
-    //grafico ad area
-    $entrate = array();
-
-
-    for($x = 0; $x < 7; $x++){
-
-      $date = date('Y-m-d',strtotime("-" .$x . " days"));
-      
-      $sqlUscita = "SELECT COUNT(id) FROM eventi WHERE eventoDateTime LIKE '" . $date . "%' AND eventoTipo = 'O'";
-      $resultUscita = mysqli_query($conn, $sqlUscita);
-      while ($row = mysqli_fetch_assoc($resultUscita)) {
-        $uscita[$date] = $row["COUNT(id)"];
-      }
-      
-      $sqlEntrata = "SELECT COUNT(id) FROM eventi WHERE eventoDateTime LIKE '" . $date . "%' AND eventoTipo = 'I'";
-      $resultEntrata = mysqli_query($conn, $sqlEntrata);
-      while ($row = mysqli_fetch_assoc($resultEntrata)) {
-        $entrata[$date] = $row["COUNT(id)"];
-      }
-    }
-    
-    $arrUscita = "";
-    for($x = 0; $x < 7; $x++){
-      $arrUscita = $arrUscita . array_values($uscita)[$x];
-    }
-    $arrUscita = strrev($arrUscita);
-
-    $arrEntrata = "";
-    for($x = 0; $x < 7; $x++){
-      $arrEntrata = $arrEntrata . array_values($entrata)[$x];
-    }
-    $arrEntrata = strrev($arrEntrata);
-  ?>
+    $data = [$dato1, $dato2]; ?>
 
     <script>
-
-      var optionsPie = {
-        chart: {
-          type: 'pie'
-        },
-        title : {
-          text: 'Api all\'interno/esterno',
-        },
-        plotOptions: {
-          pie: {
-            customScale: 1 
-          }
-        },
-        series: <?php echo str_replace('"', ' ', json_encode($data)) ?>,
-        labels: ['Api all\'interno', 'Api all\'esterno']
-      }
-
-      const day = 24*60*1000*60;
-
-      var optionsArea = {
-        series: [{
-          name: 'Api in entrata',
-          data: [<?php echo $arrEntrata[0];?>, <?php echo $arrEntrata[1];?>, <?php echo $arrEntrata[2];?>, <?php echo $arrEntrata[3];?>, <?php echo $arrEntrata[4];?>, <?php echo $arrEntrata[5];?>, <?php echo $arrEntrata[6];?>]
-        }, {
-          name: 'Api in uscita',
-          data: [<?php echo $arrUscita[0];?>, <?php echo $arrUscita[1];?>, <?php echo $arrUscita[2];?>, <?php echo $arrUscita[3];?>, <?php echo $arrUscita[4];?>, <?php echo $arrUscita[5];?>, <?php echo $arrUscita[6];?>]
-        }],
-
-        chart:{
-          height: 500,
-          type: 'area'
-        },
-        title:{
-          text: 'Api in entrata/uscita per giorno', 
-        }, 
-        plotOptions: {
-          pie: {
-            customScale: 1 
-          }
-      },
-      xaxis: {
-          type: 'datetime',
-          categories: [Date.now()-day*6, Date.now()-day*5, Date.now()-day*4, Date.now()-day*3, Date.now()-day*2, Date.now()-day*1, Date.now()],
-        },
-      };
-
 
       const d = new Date();
 
@@ -417,14 +366,87 @@ require_once './base.php';
           opacity: 1
         }
         };
-      var pie = new ApexCharts(document.getElementById('first'), optionsPie);
-      pie.render();
-      
-      var area = new ApexCharts(document.getElementById('second'), optionsArea);
-      area.render();
 
       var isto = new ApexCharts(document.getElementById('third'), optionsIsto);
       isto.render();
     </script>
   </main>
 </body>
+
+<script>
+  
+const day = 24*60*1000*60;
+
+var optionsArea = {
+  series: [],
+  chart:{
+    height: 500,
+    type: 'area'
+  },
+  title:{
+    text: 'Api in entrata/uscita per giorno', 
+  }, 
+  plotOptions: {
+    pie: {
+      customScale: 1 
+    }
+},
+xaxis: {
+    type: 'datetime',
+    categories: [Date.now()-day*6, Date.now()-day*5, Date.now()-day*4, Date.now()-day*3, Date.now()-day*2, Date.now()-day*1, Date.now()],
+  },
+};
+
+  var area = new ApexCharts(document.getElementById('second'), optionsArea);
+  area.render();
+
+  var optionsPie = {
+        chart: {
+          type: 'pie'
+        },
+        title : {
+          text: 'Api all\'interno/esterno',
+        },
+        plotOptions: {
+          pie: {
+            customScale: 1 
+          }
+        },
+        series: <?php echo str_replace('"', ' ', json_encode($data)) ?>,
+        labels: ['Api all\'interno', 'Api all\'esterno']
+      }
+
+      var pie = new ApexCharts(document.getElementById('first'), optionsPie);
+      pie.render();
+
+  const intervalID = setInterval(logJSONData, 1000);
+
+  async function logJSONData() {
+    const response = await fetch('<?php echo $_SERVER['PHP_SELF'] . "?api" ?>');
+    const jsonData = await response.json();
+    console.log(jsonData);
+
+    area.updateSeries([
+      {
+        data : jsonData.api_in2.split('')
+      },
+      {
+        data: jsonData.api_out2.split('')
+      }
+    ])
+
+    // pie.updateSeries([
+    //   {
+    //     name: "Api all'interno",
+    //     data: jsonData.api_in[0]
+    //   },
+    //   {
+    //     name: "Api all'esterno",
+    //     data: jsonData.api_out[0]
+    //   }
+    // ])
+  }
+
+
+</script>
+
