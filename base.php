@@ -28,7 +28,7 @@
         <li><a class="text-neutral-900 hover:text-amber-500 transition-colors duration-100" href="./index.php">Home</a></li>
         <li><a class="text-neutral-900 hover:text-amber-500 transition-colors duration-100" href="./chi-siamo.php">Chi siamo</a></li>
         <li><a class="text-neutral-900 hover:text-amber-500 transition-colors duration-100" href="./faq.php">FAQ</a></li>
-        <li><a class="text-neutral-900 hover:text-amber-500 transition-colors duration-100" href="./honeycumb.php">Honeycomb</a></li>
+        <li><a class="text-neutral-900 hover:text-amber-500 transition-colors duration-100" href="./honeycumb.php">Grafici</a></li>
       </ul>
     </nav>
   </body>
