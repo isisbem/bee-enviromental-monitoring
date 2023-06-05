@@ -21,24 +21,23 @@ require_once('./base.php');
 <html>
     <body class="mx-auto">
     <section class="bg-white">
-        <div class="container px-6 py-10 ">
-            <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl">Our <span class="text-amber-500">Team</span></h1>
+        <div class="container mx-auto">
+            <h1 class="pt-5 text-xl font-semibold text-center text-gray-800 capitalize lg:text-3xl">Il <span class="text-amber-500">Team</span></h1>
 
-            <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 ">
-                Vi state chiedendo chi siamo, bene. Noi siamo una classe quarta di un istituto tecnico che si sta 
-                occupando di questo progetto. Questo progetto è un progetto che ha come scopo la supervisione della 
-                vita delle api sfruttando delle schede di acquisizione dati raccogliamo dati d’entrata e uscita 
-                tramite  sensori posti su di esse.
+            <p class="text-lg max-w-4xl mx-auto my-6 text-center text-gray-500">
+               Progetto sviluppato dalla classe 5a Informatica della scuola superiore 
+               ISIS BEM Brignoli Einaudi Marconi.
+               Supervisione a cura dei professori Sandro Pierdomenico e Massimo Lapira. 
             </p>
 
-            <div class="sm:mx-auto grid grid-cols-1 gap-x-20 gap-y-12 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-2">
+            <div class="sm:mx-10 grid grid-cols-1 gap-x-[5vw] gap-y-12 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3 px-10 sm:px-0">
                 <!-- Matteo de Privitellio -->
-                <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
+                <div class="px-12 py-6 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-xl group">
                     <div class="flex flex-col sm:-mx-4 sm:flex-row">
-                        <img class="mx-auto mt-2 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/dePrivitellio_Matteo.png" alt="">
+                        <img class="mx-auto my-6 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/dePrivitellio_Matteo.png" alt="">
                         <div class="mx-auto mt-4 sm:mx-4 sm:mt-0">
-                            <h1 class="text-center text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white">Matteo de Privitellio</h1>
-                            <p class="mt-2 text-gray-500">Designer</p>
+                            <h1 class="text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white group-hover:text-amber-500">Matteo de Privitellio</h1>
+                            <p class=" text-lg mt-2 text-gray-500">Designer</p>
                             <div class="mx-auto flex mt-4 sm:-mx-2">
                                 <a target="_blank" href="mailto:matteo.deprivitellio@isisbem.it" class="mx-2 text-gray-600  hover:text-gray-500 -300 group-hover:text-black" aria-label="Reddit">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -63,12 +62,12 @@ require_once('./base.php');
                 </div>
                 
                 <!--Matteo Diblas-->
-                <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
+                <div class="px-12 py-6 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
                     <div class="flex flex-col sm:-mx-4 sm:flex-row">
-                        <img class="mx-auto mt-2 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Diblas_Matteo.png" alt="">
+                        <img class="mx-auto my-6 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Diblas_Matteo.png" alt="">
                         <div class="mx-auto mt-4 sm:mx-4 sm:mt-0">
-                            <h1 class="text-center text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white">Matteo Diblas</h1>
-                            <p class="mt-2 text-gray-500">Software Engineer</p>
+                            <h1 class="text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white group-hover:text-amber-500">Matteo Diblas</h1>
+                            <p class="text-lg mt-2 text-gray-500">Software Engineer</p>
                             <div class="mx-auto flex mt-4 sm:-mx-2">
                                 <a target="_blank" href="mailto:matteo.diblas@isisbem.it" class="mx-2 text-gray-600  hover:text-gray-500 -300 group-hover:text-black" aria-label="Reddit">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -93,12 +92,12 @@ require_once('./base.php');
                 </div>
 
                 <!--Gamberini Luca-->
-                <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
+                <div class="px-12 py-6 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
                     <div class="flex flex-col sm:-mx-4 sm:flex-row">
-                        <img class="mx-auto mt-2 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Gamberini_Luca.png" alt="">
+                        <img class="mx-auto my-6 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Gamberini_Luca.png" alt="">
                         <div class="mx-auto mt-4 sm:mx-4 sm:mt-0">
-                            <h1 class="text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white">Luca Gamberini</h1>
-                            <p class="mt-2 text-gray-500">Web Developer & Videomaker</p>
+                            <h1 class="text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white group-hover:text-amber-500">Luca Gamberini</h1>
+                            <p class="text-lg mt-2 text-gray-500">Videomaker</p>
                             <div class="mx-auto flex mt-4 sm:-mx-2">
                                 <a target="_blank" href="mailto:luca.gamberini@isisbem.it" class="mx-2 text-gray-600  hover:text-gray-500 -300 group-hover:text-black" aria-label="Reddit">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -123,12 +122,12 @@ require_once('./base.php');
                 </div>
 
                 <!--Matteo Hajric-->
-                <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
+                <div class="px-12 py-6 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
                     <div class="flex flex-col sm:-mx-4 sm:flex-row">
-                        <img class="mx-auto mt-2 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Hajric_Matteo.png" alt="">
+                        <img class="mx-auto my-6 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Hajric_Matteo.png" alt="">
                         <div class="mx-auto mt-4 sm:mx-4 sm:mt-0">
-                            <h1 class="text-center text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white">Matteo Hajric</h1>
-                            <p class="mt-2 text-gray-500">Lead Designer</p>
+                            <h1 class="text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white group-hover:text-amber-500">Matteo Hajric</h1>
+                            <p class="text-lg mt-2 text-gray-500">Lead Designer</p>
                             <div class="mx-auto flex mt-4 sm:-mx-2">
                                 <a target="_blank" href="mailto:matteo.hajric@isisbem.it" class="mx-2 text-gray-600  hover:text-gray-500 -300 group-hover:text-black" aria-label="Reddit">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -153,12 +152,12 @@ require_once('./base.php');
                 </div>
 
                 <!--Domenico Iervolino-->
-                <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
+                <div class="px-12 py-6 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
                     <div class="flex flex-col sm:-mx-4 sm:flex-row">
-                        <img class="mx-auto mt-2 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Iervolino_Domenico.png" alt="">
+                        <img class="mx-auto my-6 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Iervolino_Domenico.png" alt="">
                         <div class="mx-auto mt-4 sm:mx-4 sm:mt-0">
-                            <h1 class="text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white">Domenico Iervolino</h1>
-                            <p class="mt-2 text-gray-500">Software Engineer & Web Developer</p>
+                            <h1 class="text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white group-hover:text-amber-500">Domenico Iervolino</h1>
+                            <p class="text-lg mt-2 text-gray-500">Software Engineer</p>
                             <div class="mx-auto flex mt-4 sm:-mx-2">
                                 <a target="_blank" href="mailto:domenico.iervolino@isisbem.it" class="mx-2 text-gray-600  hover:text-gray-500 -300 group-hover:text-black" aria-label="Reddit">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -183,12 +182,12 @@ require_once('./base.php');
                 </div>
 
                 <!--Antonio Iorio-->
-                <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
+                <div class="px-12 py-6 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
                     <div class="flex flex-col sm:-mx-4 sm:flex-row">
-                        <img class="mx-auto mt-2 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Iorio_Antonio.png" alt="">
+                        <img class="mx-auto my-6 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Iorio_Antonio.png" alt="">
                         <div class="mx-auto mt-4 sm:mx-4 sm:mt-0">
-                            <h1 class="text-center text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white">Antonio Iorio</h1>
-                            <p class="mt-2 text-gray-500">Web Developer</p>
+                            <h1 class="text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white group-hover:text-amber-500">Antonio Iorio</h1>
+                            <p class="text-lg mt-2 text-gray-500">Web Developer</p>
                             <div class="mx-auto flex mt-4 sm:-mx-2">
                                 <a target="_blank" href="mailto:antonio.iorio@isisbem.it" class="mx-2 text-gray-600  hover:text-gray-500 -300 group-hover:text-black" aria-label="Reddit">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -213,12 +212,12 @@ require_once('./base.php');
                 </div>
 
                 <!--Milos Kovacevic-->
-                <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
+                <div class="px-12 py-6 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
                     <div class="flex flex-col sm:-mx-4 sm:flex-row">
-                        <img class="mx-auto mt-2 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Kovacevic_Milos.png" alt="">
+                        <img class="mx-auto my-6 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Kovacevic_Milos.png" alt="">
                         <div class="mx-auto mt-4 sm:mx-4 sm:mt-0">
-                            <h1 class="text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white">Milos Kovacevic</h1>
-                            <p class="mt-2 text-gray-500">Web Developer & 3D Modeler</p>
+                            <h1 class="text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white group-hover:text-amber-500">Milos Kovacevic</h1>
+                            <p class="text-lg mt-2 text-gray-500">Web Developer</p>
                             <div class="mx-auto flex mt-4 sm:-mx-2">
                                 <a target="_blank" href="mailto:milos.kovacevic@isisbem.it" class="mx-2 text-gray-600  hover:text-gray-500 -300 group-hover:text-black" aria-label="Reddit">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -243,12 +242,12 @@ require_once('./base.php');
                 </div>
 
                 <!--Daniele Monfregola-->
-                <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
+                <div class="px-12 py-6 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
                     <div class="flex flex-col sm:-mx-4 sm:flex-row">
-                        <img class="mx-auto mt-2 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Monfregola_Daniele.png" alt="">
+                        <img class="mx-auto my-6 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Monfregola_Daniele.png" alt="">
                         <div class="mx-auto mt-4 sm:mx-4 sm:mt-0">
-                            <h1 class="text-center text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white">Daniele Monfregola</h1>
-                            <p class="mt-2 text-gray-500">Videomaker</p>
+                            <h1 class="text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white group-hover:text-amber-500">Daniele Monfregola</h1>
+                            <p class="text-lg mt-2 text-gray-500">Videomaker</p>
                             <div class="mx-auto flex mt-4 sm:-mx-2">
                                 <a target="_blank" href="mailto:daniele.monfregola@isisbem.it" class="mx-2 text-gray-600  hover:text-gray-500 -300 group-hover:text-black" aria-label="Reddit">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -272,13 +271,13 @@ require_once('./base.php');
                     </div>
                 </div>
 
-                <!--Alerto Pocar-->
-                <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
+                <!--Alberto Pocar-->
+                <div class="px-12 py-6 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
                     <div class="flex flex-col sm:-mx-4 sm:flex-row">
-                        <img class="mx-auto mt-2 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Pocar_Alberto.png" alt="">
+                        <img class="mx-auto my-6 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Pocar_Alberto.png" alt="">
                         <div class="mx-auto mt-4 sm:mx-4 sm:mt-0">
-                            <h1 class="text-center text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white">Alberto Pocar</h1>
-                            <p class="mt-2 text-gray-500">Designer</p>
+                            <h1 class="text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white group-hover:text-amber-500">Alberto Pocar</h1>
+                            <p class="text-lg mt-2 text-gray-500">Designer</p>
                             <div class="mx-auto flex mt-4 sm:-mx-2">
                                 <a target="_blank" href="mailto:alberto.pocar@isisbem.it" class="mx-2 text-gray-600  hover:text-gray-500 -300 group-hover:text-black" aria-label="Reddit">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -303,12 +302,12 @@ require_once('./base.php');
                 </div>
 
                 <!--Cristian Radev-->
-                <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
+                <div class="px-12 py-6 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
                     <div class="flex flex-col sm:-mx-4 sm:flex-row">
-                        <img class="mx-auto mt-2 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Radev_Cristian.png" alt="">
+                        <img class="mx-auto my-6 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Radev_Cristian.png" alt="">
                         <div class="mx-auto mt-4 sm:mx-4 sm:mt-0">
-                            <h1 class="text-center text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white">Cristian Radev</h1>
-                            <p class="mt-2 text-gray-500">Web Developer</p>
+                            <h1 class="text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white group-hover:text-amber-500">Cristian Radev</h1>
+                            <p class="text-lg mt-2 text-gray-500">Web Developer</p>
                             <div class="mx-auto flex mt-4 sm:-mx-2">
                                 <a target="_blank" href="mailto:cristian.radev@isisbem.it" class="mx-2 text-gray-600  hover:text-gray-500 -300 group-hover:text-black" aria-label="Reddit">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -333,12 +332,12 @@ require_once('./base.php');
                 </div>
 
                 <!--Alessio Sanda-->
-                <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
+                <div class="px-12 py-6 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
                     <div class="flex flex-col sm:-mx-4 sm:flex-row">
-                        <img class="mx-auto mt-2 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Sanda_Alessio.png" alt="">
+                        <img class="mx-auto my-6 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Sanda_Alessio.png" alt="">
                         <div class="mx-auto mt-4 sm:mx-4 sm:mt-0">
-                            <h1 class="text-center text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white">Alessio Sanda</h1>
-                            <p class="mt-2 text-gray-500">Designer</p>
+                            <h1 class="text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white group-hover:text-amber-500">Alessio Sanda</h1>
+                            <p class="text-lg mt-2 text-gray-500">Designer</p>
                             <div class="mx-auto flex mt-4 sm:-mx-2">
                                 <a target="_blank" href="mailto:alessio.sanda@isisbem.it" class="mx-2 text-gray-600  hover:text-gray-500 -300 group-hover:text-black" aria-label="Reddit">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -363,12 +362,12 @@ require_once('./base.php');
                 </div>
 
                 <!--Federico Scapati-->
-                <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
+                <div class="px-12 py-6 transition-colors duration-300 transform border cursor-pointer rounded-xl border-neutral-400 hover:shadow-lg group">
                     <div class="flex flex-col sm:-mx-4 sm:flex-row">
-                        <img class="mx-auto mt-2 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Scapati_Federico.png" alt="">
+                        <img class="mx-auto my-6 flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300 group-hover:ring-amber-500" src="./static/images/Scapati_Federico.png" alt="">
                         <div class="mx-auto mt-4 sm:mx-4 sm:mt-0">
-                            <h1 class="text-center text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white">Federico Scapati</h1>
-                            <p class="mt-2 text-gray-500">Web Developer & Videomaker</p>
+                            <h1 class="text-xl font-semibold text-gray-700 md:text-2xl -hover:text-white group-hover:text-amber-500">Federico Scapati</h1>
+                            <p class="text-lg mt-2 text-gray-500">Web Developer</p>
                             <div class="mx-auto flex mt-4 sm:-mx-2">
                                 <a target="_blank" href="mailto:federico.scapati@isisbem.it" class="mx-2 text-gray-600  hover:text-gray-500 -300 group-hover:text-black" aria-label="Reddit">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
