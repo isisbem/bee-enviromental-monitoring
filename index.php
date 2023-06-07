@@ -16,7 +16,7 @@ require_once './base.php';
         </a>
       </div>
       <div>
-        <img src="./static/images/logo-ape.svg" alt="splash" class="mt-20 w-[25rem] h-[15rem] sm:mt-0 drop-shadow-xl sm:h-auto sm:w-[25rem]">
+        <img src="./static/images/logo-ape.svg" alt="splash" class=" mt-20 w-[25rem] h-[15rem] sm:mt-0 drop-shadow-xl sm:h-auto sm:w-[25rem]">
       </div>
     </section>
     <!-- Contatti -->
