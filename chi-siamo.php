@@ -5,16 +5,6 @@ require_once('./base.php');
 
 <script>
 
-    const classe = [{
-        "img" : "./static/images/Matteo_de_Privitellio.png",
-        "nome" : "Matteo de Privitellio",
-        "descrizione" : "Designer",
-        "email" : "mailto:matteo.deprivitellio@isisbem.it",
-        "github" : "#"
-        "instagram" : "https://www.instagram.com/matteo28friz/",
-    },
-]
-
 </script>
 <!-- Cambiare responsive centrato -->
  

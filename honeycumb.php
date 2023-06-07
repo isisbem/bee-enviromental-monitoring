@@ -125,34 +125,29 @@ require_once './base.php';
                   <div>
                     <?php 
 
-                      $tabella = "SELECT * FROM voli WHERE durataSec IS NOT NULL GROUP BY tag ORDER BY durataSec DESC LIMIT 20";
+                      $tabella = "SELECT * FROM voli WHERE durataSec IS NOT NULL GROUP BY tag ORDER BY durataSec DESC LIMIT 10";
                       $result = mysqli_query($conn, $tabella);
                                   
                       if (mysqli_num_rows($result) > 0) {
-                          echo "<table class=\"min-w-full text-center text-sm font-light overflow-y-scroll\">
-                          <thead
-                        class=\"border-b bg-white font-medium dark:border-neutral-500 dark:bg-neutral-600\">
-                        <tr>
-                          <th scope=\"col\" class=\"px-6 py-4\">Tag</th>
-                          <th scope=\"col\" class=\"px-6 py-4\">Entrata nell'arnea</th>
-                          <th scope=\"col\" class=\"px-6 py-4\">Uscita dall'arnea</th>
-                          <th scope=\"col\" class=\"px-6 py-4\">Durata volo (\")</th>
-                        </tr>
-                      </thead>
-                      <tbody>";
-                                          
+                          echo "<table class=\"min-w-full text-center text-sm font-light overflow-y-scroll border border-[#373737]\">
+                                <thead class=\" font-medium bg-amber-400 border-b border-[#373737]\">
+                              <tr>
+                                <th scope=\"col\" class=\"text-white px-6 py-4 border-l border-r border-[#373737]\">Tag</th>
+                                <th scope=\"col\" class=\"text-white px-6 py-4 border-l border-r border-[#373737]\">Entrata nell'arnia</th>
+                                <th scope=\"col\" class=\"text-white px-6 py-4 border-l border-r border-[#373737]\">Uscita dall'arnia</th>
+                                <th scope=\"col\" class=\"text-white px-6 py-4 border-l border-r border-[#373737]\">Durata volo (\")</th>
+                              </tr>
+                            </thead>
+                            <tbody>";
+         
                           while($row = mysqli_fetch_assoc($result)) {
 
-                              // if($row['durataSec']!=0) {
-                              //   $durata = $row['durataSec'];
-                              // }
-                              // else continue;
                               echo "<tr>";
-                              echo "<td>" . $row['tag'] . "</td>";
-                              echo "<td>" . $row['eventoIn'] . "</td>";
-                              echo "<td>" . $row['eventoOut'] . "</td>";
-                              // echo "<td>" . $durata . " s</td>";
-                              echo "<td>" . $row['durataSec'] . " s</td>";
+                              echo "<td class=\"text-black px-6 py-4 border-r border-b border-[#373737]\">" . $row['tag'] . "</td>";
+                              echo "<td class=\"text-black px-6 py-4 border-r border-b border-[#373737]\">" . $row['eventoIn'] . "</td>";
+                              echo "<td class=\"text-black px-6 py-4 border-r border-b border-[#373737]\">" . $row['eventoOut'] . "</td>";
+
+                              echo "<td class=\"text-black px-6 py-4  border-b border-[#373737]\">" . $row['durataSec'] . "''</td>";
                               echo "</tr>";
                           }
                           echo "</tbody>";
@@ -203,14 +198,14 @@ require_once './base.php';
       const d = new Date();
 
       var optionsIsto = {
-          series: [{
+        series: [{
           name: 'In',
           data: [44, 55, 41, 67, 22, 43]
         }, {
           name: 'Out',
           data: [13, 23, 20, 8, 13, 27]
         }],
-          chart: {
+        chart: {
           type: 'bar',
           stacked: true,
           toolbar: {
@@ -249,20 +244,26 @@ require_once './base.php';
               }
             }
           },
+          
         },
         xaxis: {
           type: 'hours',
-          categories: [(d.getHours())-5,(d.getHours())-4,(d.getHours())-3,(d.getHours())-2,
-          (d.getHours()-1),(d.getHours())],
+          categories: [(d.getHours())-5 + ":00",(d.getHours())-4 + ":00",(d.getHours())-3 + ":00",(d.getHours())-2 + ":00", (d.getHours()-1) + ":00",(d.getHours()) + ":00"],
         },
         legend: {
           position: 'right',
-          offsetY: 40
+          offsetY: 40,
         },
         fill: {
           opacity: 1
+        },
+        colors: ['#FFD44F', '#373737'],
+        tooltip:{
+          onDatasetHover: {
+            highlightDataSeries: true,
+          },
         }
-        };
+    };
 
       var isto = new ApexCharts(document.getElementById('third'), optionsIsto);
       isto.render();
@@ -287,12 +288,23 @@ var optionsArea = {
     pie: {
       customScale: 1 
     }
-},
-xaxis: {
-    type: 'datetime',
-    categories: [Date.now()-day*6, Date.now()-day*5, Date.now()-day*4, Date.now()-day*3, Date.now()-day*2, Date.now()-day*1, Date.now()],
   },
-};
+  xaxis: {
+      type: 'datetime',
+      categories: [Date.now()-day*6, Date.now()-day*5, Date.now()-day*4, Date.now()-day*3, Date.now()-day*2, Date.now()-day*1, Date.now()],
+    },
+  colors: ['#FFD44F', '#373737'],
+  tooltip:{
+    style: {
+      fontSize: '14px',
+      fontFamily: 'Rubik',
+    },
+    onDatasetHover: {
+      highlightDataSeries: true,
+    },
+  }
+
+  };
 
   var area = new ApexCharts(document.getElementById('second'), optionsArea);
   area.render();
@@ -302,10 +314,10 @@ xaxis: {
         chart: {
           type: 'pie',
           options: {
-          chart: {
-          id: "chart-id"
-        }
-      }
+            chart: {
+              id: "chart-id"
+            },
+          }
         },
         title : {
           text: 'Api all\'interno/esterno',
@@ -317,6 +329,16 @@ xaxis: {
         },
         series: [],
         labels: ['Api all\'interno', 'Api all\'esterno'],
+        colors: ['#FFD44F', '#373737'],
+        tooltip:{
+          style: {
+            fontSize: '14px',
+            fontFamily: 'Rubik',
+          },
+          onDatasetHover: {
+            highlightDataSeries: true,
+          },
+        }
       }
 
       // series: <?php //echo str_replace('"', ' ', json_encode($data)) ?>,
