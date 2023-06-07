@@ -216,7 +216,15 @@ require_once './base.php';
           },
         },
         title : {
-          text: 'In/Out ogni ora'
+          text: 'In/Out ogni ora',
+          style: {
+            fontSize: '16px',
+            fontFamily: 'Rubik',
+            color: '#373737'
+          },
+          align: 'center',
+          offsetX: 15,
+          offsetY: 15,
         },
         responsive: [{
           breakpoint: 480,
@@ -283,6 +291,14 @@ var optionsArea = {
   },
   title:{
     text: 'Api in entrata/uscita per giorno', 
+    style: {
+      fontSize: '16px',
+      fontFamily: 'Rubik',
+      color: '#373737'
+    },
+    align: 'center',
+    offsetX: 15,
+    offsetY: 15,
   }, 
   plotOptions: {
     pie: {
@@ -315,12 +331,20 @@ var optionsArea = {
           type: 'pie',
           options: {
             chart: {
-              id: "chart-id"
+              id: "chart-id",
             },
           }
         },
         title : {
           text: 'Api all\'interno/esterno',
+          style: {
+            fontSize: '16px',
+            fontFamily: 'Rubik',
+            color: '#373737'
+          },
+          align: 'center',
+          offsetX: 15,
+          offsetY: 15,
         },
         plotOptions: {
           pie: {
