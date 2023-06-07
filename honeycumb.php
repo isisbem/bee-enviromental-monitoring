@@ -125,18 +125,18 @@ require_once './base.php';
                   <div>
                     <?php 
 
-                      $tabella = "SELECT * FROM voli WHERE durataSec IS NOT NULL GROUP BY tag ORDER BY durataSec DESC LIMIT 20";
+                      $tabella = "SELECT * FROM voli WHERE durataSec IS NOT NULL GROUP BY tag ORDER BY durataSec DESC LIMIT 10";
                       $result = mysqli_query($conn, $tabella);
                                   
                       if (mysqli_num_rows($result) > 0) {
-                          echo "<table class=\"min-w-full text-center text-sm font-light overflow-y-scroll\">
+                          echo "<table class=\"table-auto min-w-full text-center text-sm font-light overflow-y-scroll\">
                           <thead
-                        class=\"border-b bg-white font-medium dark:border-neutral-500 dark:bg-neutral-600\">
+                        class=\"border-b font-medium bg-neutral-900\">
                         <tr>
-                          <th scope=\"col\" class=\"px-6 py-4\">Tag</th>
-                          <th scope=\"col\" class=\"px-6 py-4\">Entrata nell'arnea</th>
-                          <th scope=\"col\" class=\"px-6 py-4\">Uscita dall'arnea</th>
-                          <th scope=\"col\" class=\"px-6 py-4\">Durata volo (\")</th>
+                          <th scope=\"col\" class=\"border px-6 py-4 text-white\">Tag</th>
+                          <th scope=\"col\" class=\"border px-6 py-4 text-white\">Entrata nell'arnea</th>
+                          <th scope=\"col\" class=\"border px-6 py-4 text-white\">Uscita dall'arnea</th>
+                          <th scope=\"col\" class=\"border px-6 py-4 text-white\">Durata volo (\")</th>
                         </tr>
                       </thead>
                       <tbody>";
@@ -148,11 +148,11 @@ require_once './base.php';
                               // }
                               // else continue;
                               echo "<tr>";
-                              echo "<td>" . $row['tag'] . "</td>";
-                              echo "<td>" . $row['eventoIn'] . "</td>";
-                              echo "<td>" . $row['eventoOut'] . "</td>";
-                              // echo "<td>" . $durata . " s</td>";
-                              echo "<td>" . $row['durataSec'] . " s</td>";
+                              echo "<td class=\"border px-3 py-2\">" . $row['tag'] . "</td>";
+                              echo "<td class=\"border px-3 py-2\">" . $row['eventoIn'] . "</td>";
+                              echo "<td class=\"border px-3 py-2\">" . $row['eventoOut'] . "</td>";
+                              // echo "<td class=\"border px-3 py-2\">" . $durata . " s</td>";
+                              echo "<td class=\"border px-3 py-2\">" . $row['durataSec'] . " s</td>";
                               echo "</tr>";
                           }
                           echo "</tbody>";
@@ -312,10 +312,9 @@ xaxis: {
         },
         plotOptions: {
           pie: {
-            customScale: 1 
-          }
+            customScale: 1,
+          },
         },
-        series: [],
         labels: ['Api all\'interno', 'Api all\'esterno'],
       }
 
@@ -340,9 +339,7 @@ xaxis: {
     ])
 
     //ERRORE LAMPEGGIA
-    
-    var newPieSeries = [parseInt(jsonData.api_in), parseInt(jsonData.api_out)];
-    pie.updateSeries(newPieSeries);
+    pie.updateSeries([parseInt(jsonData.api_in), parseInt(jsonData.api_out)], false);
 
 
 
