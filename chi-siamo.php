@@ -11,7 +11,7 @@ require_once('./base.php');
 <html>
     <body class="mx-auto">
     <section class="bg-white">
-        <div class="container mx-auto">
+        <div class="container mx-auto mb-3">
             <h1 class="pt-5 text-xl font-semibold text-center text-gray-800 capitalize lg:text-3xl">Il <span class="text-amber-500">Team</span></h1>
 
             <p class="text-lg max-w-4xl mx-auto my-6 text-center text-gray-500">

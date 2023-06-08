@@ -5,29 +5,27 @@ require_once './base.php';
   <main class="bg-neutral-50 divide-y divide-neutral-200 pb-20">
     <section class="mt-5 sm:mt-0 sm:flex grow h-full items-center justify-between sm:p-20">
       <div class="max-w-lg sm:space-y-4 select-none sm:z-10">
-          <h1 class="text-center sm:text-left  font-extrabold text-amber-400 text-5xl drop-shadow-sm">Bee Enviromental Monitoring</h1>
-        <h2 class="text-center sm:text-left mt-4 sm:mt-0 font-bold text-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-
-        <a href="./honeycumb.php" class="mx-auto sm:mx-0 text-xl !mt-8 font-medium flex items-center justify-center space-x-3 bg-amber-400 hover:bg-amber-500 transition-all duration-100 px-5 py-2 rounded-full">
-          <span>Scopri i grafici</span>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-            <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clip-rule="evenodd" />
-          </svg>
-        </a>
+        <h1 class="text-center sm:text-left  font-extrabold text-amber-400 md:text-6xl min-[320px]:text-3xl  drop-shadow-sm">Bee Enviromental Monitoring</h1>
       </div>
       <div>
-        <img src="./static/images/logo-ape.svg" alt="splash" class=" mt-20 w-[25rem] h-[15rem] sm:mt-0 drop-shadow-xl sm:h-auto sm:w-[25rem]">
+        <img src="./static/images/logo-ape.svg" alt="splash" class="mb-5 mr-[10vw] mt-20 w-[25rem] h-[15rem] sm:mt-0 drop-shadow-xl sm:h-auto sm:w-[25rem]">
       </div>
     </section>
     <!-- Contatti -->
-    <section class="bg-neutral-50 h-full flex flex-grow">
+    <section class="bg-neutral-50 h-full block">
+
       <div class="mx-auto w-full">
+        <div class="m-5">
+          <h1 class="text-center font-bold text-amber-400 text-4xl sm:text-6xl uppercase select-none tracking-wider">Com'è nato il progetto?</h1>
+          <p class="text-center mt-5 text-neutral-500 font-medium text-xl mx-[15vw]" >Il progetto è nato da una conversazione con il nostro dirigente scolastico Marco Fragiacomo e apicoltore esperto. Durante questa discussione il dirigente ci raccontò l'esigenza degli apicoltori di controllare l’andamento dell’entrata e uscita delle api dall’alveare. Durante l’incontro, ci siamo accorti che il problema che avevano gli apicoltori era risolvibile con le nostre competenze informatiche, e da qui nacque l’idea di Bee Environmental Monitoring</p>
+        </div>
+
         <div class="text-center mt-14">
           <h1 class="font-bold text-amber-400 text-4xl sm:text-6xl uppercase select-none tracking-wider">Contattaci</h1>
           <p class="mt-2 text-neutral-500 font-medium text-xl">Hai qualche domanda o vuoi saperne di più?</p>
         </div>
 
-        <div class="sm:px-40">
+        <div class="sm:px-40 px-[5vw]">
           <div class="grid grid-cols-3 gap-20 mt-16 md:grid-cols-2 lg:grid-cols-3 bg-white border border-gray-200 p-10 rounded-2xl px-20 min-w-full">
             <div class="flex flex-col items-center justify-center text-center">
               <span class="p-4 text-amber-500 rounded-full bg-amber-100/80">

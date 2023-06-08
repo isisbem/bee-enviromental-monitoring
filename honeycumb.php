@@ -112,7 +112,7 @@ require_once './base.php';
   <main>
     <h1 class="text-2xl my-3 font-bold text-center text-amber-400 sm:text-3xl sm:mx-auto">Grafici</h1>
     <!-- division -->
-    <div class="grid grid-cols-1 grid-api-2 gap-2 text-center min-h-screen h-full mt-2 sm:grid-cols-2">
+    <div class="grid grid-cols-1 grid-api-2 gap-2 text-center min-h-screen h-full mt-2 sm:grid-cols-2 mx-2 mb-2">
       <div id="first" class="border-2 border-neutral-300 shadow-2xl bg-white rounded-lg"></div>
       <div id="second" class="border-2 border-neutral-300 shadow-2xl bg-white rounded-lg"></div>
       <div id="third" class="border-2 border-neutral-300 shadow-2xl bg-white rounded-lg"></div>
@@ -284,10 +284,16 @@ require_once './base.php';
 const day = 24*60*1000*60;
 
 var optionsArea = {
-  series: [],
+  series: [{
+    name: 'Api in entrata',
+    data: []
+  }, {
+    name: 'Api in uscita',
+    data: []
+  }],
   chart:{
     height: 500,
-    type: 'area'
+    type: 'area',
   },
   title:{
     text: 'Api in entrata/uscita per giorno', 
@@ -299,16 +305,16 @@ var optionsArea = {
     align: 'center',
     offsetX: 15,
     offsetY: 15,
-  }, 
+  },
   plotOptions: {
     pie: {
-      customScale: 1 
+      customScale: 1
     }
   },
   xaxis: {
-      type: 'datetime',
-      categories: [Date.now()-day*6, Date.now()-day*5, Date.now()-day*4, Date.now()-day*3, Date.now()-day*2, Date.now()-day*1, Date.now()],
-    },
+    type: 'datetime',
+    categories: [Date.now()-day*6, Date.now()-day*5, Date.now()-day*4, Date.now()-day*3, Date.now()-day*2, Date.now()-day*1, Date.now()],
+  },
   colors: ['#FFD44F', '#373737'],
   tooltip:{
     style: {
@@ -320,7 +326,7 @@ var optionsArea = {
     },
   }
 
-  };
+};
 
   var area = new ApexCharts(document.getElementById('second'), optionsArea);
   area.render();
@@ -388,7 +394,7 @@ var optionsArea = {
     //ERRORE LAMPEGGIA
     
     var newPieSeries = [parseInt(jsonData.api_in), parseInt(jsonData.api_out)];
-    pie.updateSeries(newPieSeries);
+    pie.updateSeries(newPieSeries, false);
 
 
 
