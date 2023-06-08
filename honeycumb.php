@@ -126,6 +126,7 @@ require_once './base.php';
                     <?php 
 
                       $tabella = "SELECT * FROM voli WHERE durataSec IS NOT NULL GROUP BY tag ORDER BY durataSec DESC LIMIT 10";
+                      $tabella = "SELECT * FROM voli WHERE durataSec IS NOT NULL GROUP BY tag ORDER BY durataSec DESC LIMIT 10";
                       $result = mysqli_query($conn, $tabella);
                                   
                       if (mysqli_num_rows($result) > 0) {
@@ -354,10 +355,9 @@ var optionsArea = {
         },
         plotOptions: {
           pie: {
-            customScale: 1 
-          }
+            customScale: 1,
+          },
         },
-        series: [],
         labels: ['Api all\'interno', 'Api all\'esterno'],
         colors: ['#FFD44F', '#373737'],
         tooltip:{
@@ -392,9 +392,13 @@ var optionsArea = {
     ])
 
     //ERRORE LAMPEGGIA
+<<<<<<< HEAD
     
     var newPieSeries = [parseInt(jsonData.api_in), parseInt(jsonData.api_out)];
     pie.updateSeries(newPieSeries, false);
+=======
+    pie.updateSeries([parseInt(jsonData.api_in), parseInt(jsonData.api_out)], false);
+>>>>>>> 9f77ae533e1c95236d0af987b95eae4e9ac95e67
 
 
 
